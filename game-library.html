@@ -1,0 +1,2940 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charSet="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Game Library</title>
+  <meta name="author" content="Pixel Paradise" />
+  <meta name="generator" content="Starfield Technologies; Go Daddy Website Builder 8.0.0000" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="apple-touch-icon" sizes="57x57"
+    href="https://img1.wsimg.com/isteam/ip/ac25bc45-c8ca-4ca8-8af7-f260fd99529e/PixelParadiselogo.png/:/rs=w:57,h:57,m" />
+  <link rel="apple-touch-icon" sizes="60x60"
+    href="https://img1.wsimg.com/isteam/ip/ac25bc45-c8ca-4ca8-8af7-f260fd99529e/PixelParadiselogo.png/:/rs=w:60,h:60,m" />
+  <link rel="apple-touch-icon" sizes="72x72"
+    href="https://img1.wsimg.com/isteam/ip/ac25bc45-c8ca-4ca8-8af7-f260fd99529e/PixelParadiselogo.png/:/rs=w:72,h:72,m" />
+  <link rel="apple-touch-icon" sizes="114x114"
+    href="https://img1.wsimg.com/isteam/ip/ac25bc45-c8ca-4ca8-8af7-f260fd99529e/PixelParadiselogo.png/:/rs=w:114,h:114,m" />
+  <link rel="apple-touch-icon" sizes="120x120"
+    href="https://img1.wsimg.com/isteam/ip/ac25bc45-c8ca-4ca8-8af7-f260fd99529e/PixelParadiselogo.png/:/rs=w:120,h:120,m" />
+  <link rel="apple-touch-icon" sizes="144x144"
+    href="https://img1.wsimg.com/isteam/ip/ac25bc45-c8ca-4ca8-8af7-f260fd99529e/PixelParadiselogo.png/:/rs=w:144,h:144,m" />
+  <link rel="apple-touch-icon" sizes="152x152"
+    href="https://img1.wsimg.com/isteam/ip/ac25bc45-c8ca-4ca8-8af7-f260fd99529e/PixelParadiselogo.png/:/rs=w:152,h:152,m" />
+  <link rel="apple-touch-icon" sizes="180x180"
+    href="https://img1.wsimg.com/isteam/ip/ac25bc45-c8ca-4ca8-8af7-f260fd99529e/PixelParadiselogo.png/:/rs=w:180,h:180,m" />
+  <meta property="og:url" content="https://pixelparadise.com/game-library" />
+  <meta property="og:site_name" content="Pixel Paradise" />
+  <meta property="og:title" content="Pixel Paradise" />
+  <meta property="og:description"
+    content="Our facility is outfitted with cutting-edge equipment for all of your gaming and virtual reality needs." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image"
+    content="https://img1.wsimg.com/isteam/ip/ac25bc45-c8ca-4ca8-8af7-f260fd99529e/blob-3b60ecd.png" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Pixel Paradise" />
+  <meta name="twitter:description" content="Video Gaming Center" />
+  <meta name="twitter:image"
+    content="https://img1.wsimg.com/isteam/ip/ac25bc45-c8ca-4ca8-8af7-f260fd99529e/blob-3b60ecd.png" />
+  <meta name="twitter:image:alt" content="Pixel Paradise" />
+  <meta name="theme-color" content="#000000" />
+  <style data-inline-fonts>
+    @font-face {
+      font-family: 'Ubuntu';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://img1.wsimg.com/gfonts/s/ubuntu/v20/4iCs6KVjbNBYlgoKfw7w.woff) format('woff');
+    }
+
+    @font-face {
+      font-family: 'Lato';
+      font-style: italic;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://img1.wsimg.com/gfonts/s/lato/v24/S6u8w4BMUTPHjxsAXC-s.woff) format('woff');
+    }
+
+    @font-face {
+      font-family: 'Lato';
+      font-style: italic;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://img1.wsimg.com/gfonts/s/lato/v24/S6u_w4BMUTPHjxsI5wq_Gwfr.woff) format('woff');
+    }
+
+    @font-face {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 100;
+      font-display: swap;
+      src: url(https://img1.wsimg.com/gfonts/s/lato/v24/S6u8w4BMUTPHh30AXC-s.woff) format('woff');
+    }
+
+    @font-face {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(https://img1.wsimg.com/gfonts/s/lato/v24/S6u9w4BMUTPHh7USSwiPHw.woff) format('woff');
+    }
+
+    @font-face {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://img1.wsimg.com/gfonts/s/lato/v24/S6uyw4BMUTPHjx4wWA.woff) format('woff');
+    }
+
+    @font-face {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://img1.wsimg.com/gfonts/s/lato/v24/S6u9w4BMUTPHh6UVSwiPHw.woff) format('woff');
+    }
+
+    @font-face {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 900;
+      font-display: swap;
+      src: url(https://img1.wsimg.com/gfonts/s/lato/v24/S6u9w4BMUTPHh50XSwiPHw.woff) format('woff');
+    }
+  </style>
+  <style>
+    .x {
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      margin: 0;
+      box-sizing: border-box
+    }
+
+    .x *,
+    .x :after,
+    .x :before {
+      box-sizing: inherit
+    }
+
+    .x-el a[href^="mailto:"]:not(.x-el),
+    .x-el a[href^="tel:"]:not(.x-el) {
+      color: inherit;
+      font-size: inherit;
+      text-decoration: inherit
+    }
+
+    .x-el-article,
+    .x-el-aside,
+    .x-el-details,
+    .x-el-figcaption,
+    .x-el-figure,
+    .x-el-footer,
+    .x-el-header,
+    .x-el-hgroup,
+    .x-el-main,
+    .x-el-menu,
+    .x-el-nav,
+    .x-el-section,
+    .x-el-summary {
+      display: block
+    }
+
+    .x-el-audio,
+    .x-el-canvas,
+    .x-el-progress,
+    .x-el-video {
+      display: inline-block;
+      vertical-align: baseline
+    }
+
+    .x-el-audio:not([controls]) {
+      display: none;
+      height: 0
+    }
+
+    .x-el-template {
+      display: none
+    }
+
+    .x-el-a {
+      background-color: transparent;
+      color: inherit
+    }
+
+    .x-el-a:active,
+    .x-el-a:hover {
+      outline: 0
+    }
+
+    .x-el-abbr[title] {
+      border-bottom: 1px dotted
+    }
+
+    .x-el-b,
+    .x-el-strong {
+      font-weight: 700
+    }
+
+    .x-el-dfn {
+      font-style: italic
+    }
+
+    .x-el-mark {
+      background: #ff0;
+      color: #000
+    }
+
+    .x-el-small {
+      font-size: 80%
+    }
+
+    .x-el-sub,
+    .x-el-sup {
+      font-size: 75%;
+      line-height: 0;
+      position: relative;
+      vertical-align: baseline
+    }
+
+    .x-el-sup {
+      top: -.5em
+    }
+
+    .x-el-sub {
+      bottom: -.25em
+    }
+
+    .x-el-img {
+      vertical-align: middle;
+      border: 0
+    }
+
+    .x-el-svg:not(:root) {
+      overflow: hidden
+    }
+
+    .x-el-figure {
+      margin: 0
+    }
+
+    .x-el-hr {
+      box-sizing: content-box;
+      height: 0
+    }
+
+    .x-el-pre {
+      overflow: auto
+    }
+
+    .x-el-code,
+    .x-el-kbd,
+    .x-el-pre,
+    .x-el-samp {
+      font-family: monospace, monospace;
+      font-size: 1em
+    }
+
+    .x-el-button,
+    .x-el-input,
+    .x-el-optgroup,
+    .x-el-select,
+    .x-el-textarea {
+      color: inherit;
+      font: inherit;
+      margin: 0
+    }
+
+    .x-el-button {
+      overflow: visible
+    }
+
+    .x-el-button,
+    .x-el-select {
+      text-transform: none
+    }
+
+    .x-el-button,
+    .x-el-input[type=button],
+    .x-el-input[type=reset],
+    .x-el-input[type=submit] {
+      -webkit-appearance: button;
+      cursor: pointer
+    }
+
+    .x-el-button[disabled],
+    .x-el-input[disabled] {
+      cursor: default
+    }
+
+    .x-el-button::-moz-focus-inner,
+    .x-el-input::-moz-focus-inner {
+      border: 0;
+      padding: 0
+    }
+
+    .x-el-input {
+      line-height: normal
+    }
+
+    .x-el-input[type=checkbox],
+    .x-el-input[type=radio] {
+      box-sizing: border-box;
+      padding: 0
+    }
+
+    .x-el-input[type=number]::-webkit-inner-spin-button,
+    .x-el-input[type=number]::-webkit-outer-spin-button {
+      height: auto
+    }
+
+    .x-el-input[type=search] {
+      -webkit-appearance: textfield;
+      box-sizing: content-box
+    }
+
+    .x-el-input[type=search]::-webkit-search-cancel-button,
+    .x-el-input[type=search]::-webkit-search-decoration {
+      -webkit-appearance: none
+    }
+
+    .x-el-textarea {
+      border: 0
+    }
+
+    .x-el-fieldset {
+      border: 1px solid silver;
+      margin: 0 2px;
+      padding: .35em .625em .75em
+    }
+
+    .x-el-legend {
+      border: 0;
+      padding: 0
+    }
+
+    .x-el-textarea {
+      overflow: auto
+    }
+
+    .x-el-optgroup {
+      font-weight: 700
+    }
+
+    .x-el-table {
+      border-collapse: collapse;
+      border-spacing: 0
+    }
+
+    .x-el-td,
+    .x-el-th {
+      padding: 0
+    }
+
+    .x {
+      -webkit-font-smoothing: antialiased
+    }
+
+    .x-el-hr {
+      border: 0
+    }
+
+    .x-el-fieldset,
+    .x-el-input,
+    .x-el-select,
+    .x-el-textarea {
+      margin-top: 0;
+      margin-bottom: 0
+    }
+
+    .x-el-fieldset,
+    .x-el-input[type=email],
+    .x-el-input[type=text],
+    .x-el-textarea {
+      width: 100%
+    }
+
+    .x-el-label {
+      vertical-align: middle
+    }
+
+    .x-el-input {
+      border-style: none;
+      padding: .5em;
+      vertical-align: middle
+    }
+
+    .x-el-select:not([multiple]) {
+      vertical-align: middle
+    }
+
+    .x-el-textarea {
+      line-height: 1.75;
+      padding: .5em
+    }
+
+    .x-el.d-none {
+      display: none !important
+    }
+
+    .sideline-footer {
+      margin-top: auto
+    }
+
+    .disable-scroll {
+      touch-action: none;
+      overflow: hidden;
+      position: fixed;
+      max-width: 100vw
+    }
+
+    @-webkit-keyframes loaderscale {
+      0% {
+        transform: scale(1);
+        opacity: 1
+      }
+
+      45% {
+        transform: scale(.1);
+        opacity: .7
+      }
+
+      80% {
+        transform: scale(1);
+        opacity: 1
+      }
+    }
+
+    @keyframes loaderscale {
+      0% {
+        transform: scale(1);
+        opacity: 1
+      }
+
+      45% {
+        transform: scale(.1);
+        opacity: .7
+      }
+
+      80% {
+        transform: scale(1);
+        opacity: 1
+      }
+    }
+
+    .x-loader svg {
+      display: inline-block
+    }
+
+    .x-loader svg:first-child {
+      -webkit-animation: loaderscale .75s cubic-bezier(.2, .68, .18, 1.08) -.24s infinite;
+      animation: loaderscale .75s cubic-bezier(.2, .68, .18, 1.08) -.24s infinite
+    }
+
+    .x-loader svg:nth-child(2) {
+      -webkit-animation: loaderscale .75s cubic-bezier(.2, .68, .18, 1.08) -.12s infinite;
+      animation: loaderscale .75s cubic-bezier(.2, .68, .18, 1.08) -.12s infinite
+    }
+
+    .x-loader svg:nth-child(3) {
+      -webkit-animation: loaderscale .75s cubic-bezier(.2, .68, .18, 1.08) 0s infinite;
+      animation: loaderscale .75s cubic-bezier(.2, .68, .18, 1.08) 0s infinite
+    }
+
+    .x-icon>svg {
+      transition: transform .33s ease-in-out
+    }
+
+    .x-icon>svg.rotate-90 {
+      transform: rotate(-90deg)
+    }
+
+    .x-icon>svg.rotate90 {
+      transform: rotate(90deg)
+    }
+
+    .x-icon>svg.rotate-180 {
+      transform: rotate(-180deg)
+    }
+
+    .x-icon>svg.rotate180 {
+      transform: rotate(180deg)
+    }
+
+    .x-rt ol,
+    .x-rt ul {
+      text-align: left
+    }
+
+    .x-rt p {
+      margin: 0
+    }
+
+    .mte-inline-block {
+      display: inline-block
+    }
+
+    @media only screen and (min-device-width:1025px) {
+
+      :root select,
+      _::-webkit-full-page-media,
+      _:future {
+        font-family: sans-serif !important
+      }
+    }
+  </style>
+  <style>
+    /*
+https://assets.ubuntu.com/v1/81e5605d-ubuntu-font-licence-1.0.txt?_ga=2.6073011.1680210264.1602691136-468779057.1602691136
+
+Copyright 2011 Canonical Ltd. Licensed under the Ubuntu Font Licence 1.0
+*/
+
+    /*
+Copyright (c) 2010-2011 by tyPoland Lukasz Dziedzic (team@latofonts.com) with Reserved Font Name "Lato". Licensed under the SIL Open Font License, Version 1.1.
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at: http://scripts.sil.org/OFL
+
+—————————————————————————————-
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+—————————————————————————————-
+*/
+  </style>
+  <style data-glamor="cxs-default-sheet">
+    .x .c1-1 {
+      letter-spacing: normal
+    }
+
+    .x .c1-2 {
+      text-transform: none
+    }
+
+    .x .c1-3 {
+      background-color: rgb(255, 255, 255)
+    }
+
+    .x .c1-4 {
+      width: 100%
+    }
+
+    .x .c1-5>div {
+      position: relative
+    }
+
+    .x .c1-6>div {
+      overflow: hidden
+    }
+
+    .x .c1-7>div {
+      margin-top: auto
+    }
+
+    .x .c1-8>div {
+      margin-right: auto
+    }
+
+    .x .c1-9>div {
+      margin-bottom: auto
+    }
+
+    .x .c1-a>div {
+      margin-left: auto
+    }
+
+    .x .c1-b {
+      font-family: Lato, arial, sans-serif
+    }
+
+    .x .c1-c {
+      font-size: 16px
+    }
+
+    .x .c1-h {
+      background-color: rgb(22, 22, 22)
+    }
+
+    .x .c1-i {
+      padding-top: 56px
+    }
+
+    .x .c1-j {
+      padding-bottom: 56px
+    }
+
+    .x .c1-k {
+      padding: 0px !important
+    }
+
+    .x .c1-n {
+      position: relative
+    }
+
+    .x .c1-o {
+      overflow: visible
+    }
+
+    .x .c1-p {
+      background-color: rgb(0, 0, 0)
+    }
+
+    .x .c1-q {
+      padding-top: 4px
+    }
+
+    .x .c1-r {
+      padding-bottom: 4px
+    }
+
+    .x .c1-s {
+      transition: all .5s
+    }
+
+    .x .c1-t {
+      z-index: 1
+    }
+
+    .x .c1-w {
+      text-decoration: none
+    }
+
+    .x .c1-x {
+      cursor: pointer
+    }
+
+    .x .c1-y {
+      margin-left: auto
+    }
+
+    .x .c1-z {
+      margin-right: auto
+    }
+
+    .x .c1-10 {
+      padding-left: 24px
+    }
+
+    .x .c1-11 {
+      padding-right: 24px
+    }
+
+    .x .c1-12 {
+      max-width: 100%
+    }
+
+    .x .c1-13 {
+      display: flex
+    }
+
+    .x .c1-14 {
+      align-items: center
+    }
+
+    .x .c1-15 {
+      justify-content: center
+    }
+
+    .x .c1-1a {
+      width: 30px
+    }
+
+    .x .c1-1b {
+      height: 30px
+    }
+
+    .x .c1-1c {
+      color: rgb(226, 226, 226)
+    }
+
+    .x .c1-1d {
+      animation: spin 10s linear infinite
+    }
+
+    .x .c1-1n {
+      word-wrap: break-word
+    }
+
+    .x .c1-1o {
+      overflow-wrap: break-word
+    }
+
+    .x .c1-1p {
+      line-height: 1.5
+    }
+
+    .x .c1-1q {
+      margin-top: 0
+    }
+
+    .x .c1-1r {
+      margin-bottom: 0
+    }
+
+    .x .c1-1s {
+      text-align: center
+    }
+
+    .x .c1-1t {
+      font-weight: 400
+    }
+
+    .x .c1-1u .sticky-animate {
+      background-color: rgba(22, 22, 22, 0.9)
+    }
+
+    .x .c1-1v {
+      padding-top: 8px
+    }
+
+    .x .c1-1w {
+      padding-bottom: 8px
+    }
+
+    .x .c1-1x {
+      z-index: auto
+    }
+
+    .x .c1-22 {
+      flex-wrap: nowrap
+    }
+
+    .x .c1-23 {
+      margin-right: 0px
+    }
+
+    .x .c1-24 {
+      margin-left: 0px
+    }
+    
+    .x .c1-27 {
+      width: 15%
+    }
+
+    .x .c1-28 {
+      padding-right: 0px
+    }
+
+    .x .c1-29 {
+      padding-left: 0px
+    }
+
+    .x .c1-2a {
+      letter-spacing: inherit
+    }
+
+    .x .c1-2b {
+      text-transform: inherit
+    }
+
+    .x .c1-2c {
+      justify-content: flex-start
+    }
+
+    .x .c1-2d {
+      border-top: 0px
+    }
+
+    .x .c1-2e {
+      border-right: 0px
+    }
+
+    .x .c1-2f {
+      border-bottom: 0px
+    }
+
+    .x .c1-2g {
+      border-left: 0px
+    }
+
+    .x .c1-2h {
+      color: rgb(247, 247, 247)
+    }
+
+    .x .c1-2i {
+      font-weight: inherit
+    }
+
+    .x .c1-2j:hover {
+      color: rgb(127, 128, 128)
+    }
+
+    .x .c1-2k:active {
+      color: rgb(219, 219, 219)
+    }
+
+    .x .c1-2l {
+      color: inherit
+    }
+
+    .x .c1-2m {
+      display: inline-block
+    }
+
+    .x .c1-2n {
+      vertical-align: top
+    }
+
+    .x .c1-2o {
+      padding-top: 6px
+    }
+
+    .x .c1-2p {
+      padding-right: 6px
+    }
+
+    .x .c1-2q {
+      padding-bottom: 6px
+    }
+
+    .x .c1-2r {
+      padding-left: 6px
+    }
+
+    .x .c1-2s {
+      width: 70%
+    }
+
+    .x .c1-2t {
+      padding-left: 8px
+    }
+
+    .x .c1-2u {
+      padding-right: 8px
+    }
+
+    .x .c1-2v {
+      font-family: 'Ubuntu', sans-serif
+    }
+
+    .x .c1-2w {
+      max-width: calc(100% - 0.1px)
+    }
+
+    .x .c1-30 {
+      display: inline
+    }
+
+    .x .c1-31 {
+      width: auto
+    }
+
+    .x .c1-32 {
+      color: rgb(127, 128, 128)
+    }
+
+    .x .c1-33:hover {
+      color: rgb(191, 191, 191)
+    }
+
+    .x .c1-34 {
+      padding-top: 0px
+    }
+
+    .x .c1-35 {
+      padding-bottom: 0px
+    }
+
+    .x .c1-37 {
+      vertical-align: middle
+    }
+
+    .x .c1-38 {
+      aspect-ratio: 3.0013440860215055 / 1
+    }
+
+    .x .c1-39 {
+      object-fit: contain
+    }
+
+    .x .c1-3a {
+      height: 80px
+    }
+
+    .x .c1-3b {
+      background-color: transparent
+    }
+
+    .x .c1-3c {
+      transition: max-height .5s
+    }
+
+    .x .c1-3d {
+      border-radius: 0px
+    }
+
+    .x .c1-3v {
+      justify-content: flex-end
+    }
+
+    .x .c1-3w {
+      display: none
+    }
+
+    .x .c1-3x {
+      box-sizing: border-box
+    }
+
+    .x .c1-3y {
+      flex-direction: row
+    }
+
+    .x .c1-40 {
+      flex-grow: 1
+    }
+
+    .x .c1-41 {
+      flex-shrink: 1
+    }
+
+    .x .c1-42 {
+      flex-basis: 0%
+    }
+
+    .x .c1-45 {
+      line-height: 24px
+    }
+
+    .x .c1-46 {
+      padding-left: 32px
+    }
+
+    .x .c1-47 {
+      white-space: nowrap
+    }
+
+    .x .c1-48 {
+      visibility: hidden
+    }
+
+    .x .c1-49:first-child {
+      padding-left: 0
+    }
+
+    .x .c1-4a {
+      text-transform: uppercase
+    }
+
+    .x .c1-4b {
+      display: block
+    }
+
+    .x .c1-4c {
+      margin-left: -6px
+    }
+
+    .x .c1-4d {
+      margin-right: -6px
+    }
+
+    .x .c1-4e {
+      margin-top: -6px
+    }
+
+    .x .c1-4f {
+      margin-bottom: -6px
+    }
+
+    .x .c1-4g:active {
+      color: rgb(127, 128, 128)
+    }
+
+    .x .c1-4h {
+      border-bottom-style: solid
+    }
+
+    .x .c1-4i {
+      padding-bottom: 2px
+    }
+
+    .x .c1-4j {
+      margin-bottom: -3px
+    }
+
+    .x .c1-4k {
+      border-top-width: 1px
+    }
+
+    .x .c1-4l {
+      border-right-width: 1px
+    }
+
+    .x .c1-4m {
+      border-bottom-width: 1px
+    }
+
+    .x .c1-4n {
+      border-left-width: 1px
+    }
+
+    .x .c1-4o {
+      font-weight: 700
+    }
+
+    .x .c1-4s {
+      transition: transform .33s ease-in-out
+    }
+
+    .x .c1-4t {
+      transform: rotate(0deg)
+    }
+
+    .x .c1-4u {
+      border-radius: 4px
+    }
+
+    .x .c1-4v {
+      box-shadow: 0 3px 6px 3px rgba(0, 0, 0, 0.24)
+    }
+
+    .x .c1-4w {
+      padding-top: 16px
+    }
+
+    .x .c1-4x {
+      padding-bottom: 16px
+    }
+
+    .x .c1-4y {
+      padding-left: 16px
+    }
+
+    .x .c1-4z {
+      padding-right: 16px
+    }
+
+    .x .c1-50 {
+      position: absolute
+    }
+
+    .x .c1-51 {
+      right: 0px
+    }
+
+    .x .c1-52 {
+      top: 32px
+    }
+
+    .x .c1-53 {
+      max-height: 45vh
+    }
+
+    .x .c1-54 {
+      overflow-y: auto
+    }
+
+    .x .c1-55 {
+      z-index: 1003
+    }
+
+    .x .c1-58 {
+      color: rgb(164, 164, 164)
+    }
+
+    .x .c1-59 {
+      text-align: left
+    }
+
+    .x .c1-5a:last-child {
+      margin-bottom: 0
+    }
+
+    .x .c1-5b {
+      margin-top: 8px
+    }
+
+    .x .c1-5c {
+      margin-bottom: 8px
+    }
+
+    .x .c1-5d {
+      position: fixed
+    }
+
+    .x .c1-5e {
+      top: 0px
+    }
+
+    .x .c1-5f {
+      height: 100%
+    }
+
+    .x .c1-5g {
+      z-index: 10002
+    }
+
+    .x .c1-5h {
+      -webkit-overflow-scrolling: touch
+    }
+
+    .x .c1-5i {
+      transform: translateX(-249vw)
+    }
+
+    .x .c1-5j {
+      overscroll-behavior: contain
+    }
+
+    .x .c1-5k {
+      box-shadow: 0 2px 6px 0px rgba(0, 0, 0, 0.2)
+    }
+
+    .x .c1-5l {
+      transition: transform .3s ease-in-out
+    }
+
+    .x .c1-5m {
+      overflow: hidden
+    }
+
+    .x .c1-5n {
+      flex-direction: column
+    }
+
+    .x .c1-5o {
+      line-height: 1.3em
+    }
+
+    .x .c1-5p {
+      font-style: normal
+    }
+
+    .x .c1-5q {
+      top: 15px
+    }
+
+    .x .c1-5r {
+      right: 15px
+    }
+
+    .x .c1-5s {
+      font-size: 28px
+    }
+
+    .x .c1-5x {
+      overflow-x: hidden
+    }
+
+    .x .c1-5y {
+      overscroll-behavior: none
+    }
+
+    .x .c1-5z {
+      -webkit-margin-before: 0
+    }
+
+    .x .c1-60 {
+      -webkit-margin-after: 0
+    }
+
+    .x .c1-61 {
+      -webkit-padding-start: 0
+    }
+
+    .x .c1-62 {
+      border-color: rgba(76, 76, 76, 0.5)
+    }
+
+    .x .c1-63 {
+      border-bottom-width: 1px
+    }
+
+    .x .c1-64:last-child {
+      border-bottom: 0
+    }
+
+    .x .c1-65 {
+      min-width: 200px
+    }
+
+    .x .c1-66 {
+      justify-content: space-between
+    }
+
+    .x .c1-67 {
+      font-size: 22px
+    }
+
+    .x .c1-6d {
+      line-height: 1.4
+    }
+
+    .x .c1-6e {
+      margin-bottom: 40px
+    }
+
+    .x .c1-6f {
+      font-size: 32px
+    }
+
+    .x .c1-6g {
+      color: rgb(255, 255, 255)
+    }
+
+    .x .c1-6m {
+      font-size: unset
+    }
+
+    .x .c1-6n {
+      font-family: unset
+    }
+
+    .x .c1-6o {
+      letter-spacing: unset
+    }
+
+    .x .c1-6p {
+      text-transform: unset
+    }
+
+    .x .c1-6w {
+      margin-bottom: 56px
+    }
+
+    .x .c1-6x> :not(:last-child) {
+      margin-bottom: 16px
+    }
+
+    .x .c1-6z {
+      color: rgb(145, 145, 145)
+    }
+
+    .x .c1-70 {
+      font-size: inherit !important
+    }
+
+    .x .c1-71 {
+      line-height: inherit
+    }
+
+    .x .c1-72 {
+      font-style: italic
+    }
+
+    .x .c1-73 {
+      text-decoration: line-through
+    }
+
+    .x .c1-74 {
+      text-decoration: underline
+    }
+
+    .x .c1-75 {
+      background-color: rgb(17, 17, 17)
+    }
+
+    .x .c1-76>div>canvas {
+      width: 100%
+    }
+
+    .x .c1-77>div>canvas {
+      height: 100%
+    }
+
+    .x .c1-78 {
+      padding-right: 4px
+    }
+
+    .x .c1-79 {
+      padding-left: 4px
+    }
+
+    .x .c1-7a:hover {
+      color: rgb(198, 198, 198)
+    }
+
+    .x .c1-7b:active {
+      color: rgb(255, 255, 255)
+    }
+
+    .x .c1-7d {
+      padding-top: 32px
+    }
+
+    .x .c1-7e {
+      padding-bottom: 32px
+    }
+
+    .x .c1-7f {
+      flex-wrap: wrap
+    }
+
+    .x .c1-7g {
+      flex-grow: 3
+    }
+
+    .x .c1-7h {
+      flex-basis: 100%
+    }
+
+    .x .c1-7k {
+      color: rgb(169, 169, 169)
+    }
+
+    .x .c1-7l {
+      font-size: 14px
+    }
+
+    .x .c1-7r {
+      margin-top: 24px
+    }
+
+    .x .c1-7u {
+      left: 0
+    }
+
+    .x .c1-7v {
+      bottom: 0
+    }
+
+    .x .c1-7w {
+      right: 0
+    }
+
+    .x .c1-7x {
+      z-index: 10003
+    }
+
+    .x .c1-7y {
+      background-color: rgba(0, 0, 0, 0.6)
+    }
+
+    .x .c1-8d {
+      box-shadow: 0 4px 12px 0 rgba(117, 117, 117, 0.4)
+    }
+
+    .x .c1-8e {
+      max-height: 90vh
+    }
+
+    .x .c1-8f {
+      height: max-content
+    }
+
+    .x .c1-8g {
+      border-radius: 12px
+    }
+
+    .x .c1-8h {
+      max-width: 515px
+    }
+
+    .x .c1-8z {
+      color: rgb(27, 27, 27)
+    }
+
+    .x .c1-90 {
+      border-radius: 50%
+    }
+
+    .x .c1-91 {
+      height: 22px
+    }
+
+    .x .c1-92 {
+      width: 22px
+    }
+
+    .x .c1-93 {
+      align-self: center
+    }
+
+    .x .c1-94 {
+      height: auto
+    }
+
+    .x .c1-95>*:not(:last-child) {
+      margin-bottom: 0px
+    }
+
+    .x .c1-99 {
+      border-width: 0 !important
+    }
+
+    .x .c1-9a {
+      aspect-ratio: 2.2 / 1
+    }
+
+    .x .c1-9b>*:not(:last-child) {
+      margin-bottom: 16px
+    }
+
+    .x .c1-9c {
+      padding-right: 32px
+    }
+
+    .x .c1-9d {
+      line-height: 1.25
+    }
+
+    .x .c1-9e {
+      color: rgb(0, 0, 0)
+    }
+
+    .x .c1-9f {
+      color: rgb(94, 94, 94)
+    }
+
+    .x .c1-9g:hover {
+      color: rgb(48, 48, 48)
+    }
+
+    .x .c1-9h:active {
+      color: rgb(0, 0, 0)
+    }
+
+    .x .c1-9i {
+      letter-spacing: 1px
+    }
+
+    .x .c1-9j {
+      border-style: none
+    }
+
+    .x .c1-9k {
+      display: inline-flex
+    }
+
+    .x .c1-9l {
+      min-height: 56px
+    }
+
+    .x .c1-9m {
+      color: rgb(198, 198, 198)
+    }
+
+    .x .c1-9n {
+      text-shadow: none
+    }
+
+    .x .c1-9o:hover {
+      background-color: rgb(0, 0, 0)
+    }
+
+    .x .c1-9q {
+      right: 24px
+    }
+
+    .x .c1-9r {
+      bottom: 24px
+    }
+
+    .x .c1-9s {
+      z-index: 9999
+    }
+
+    .x .c1-9t {
+      width: 65px
+    }
+
+    .x .c1-9u {
+      height: 65px
+    }
+
+    .x .c1-9w {
+      z-index: 10000
+    }
+
+    .x .c1-9x {
+      transition: all 1s ease-in
+    }
+
+    .x .c1-9y {
+      box-shadow: 0 2px 6px 0px rgba(0, 0, 0, 0.3)
+    }
+
+    .x .c1-9z {
+      contain: content
+    }
+
+    .x .c1-a0 {
+      bottom: -500px
+    }
+
+    .x .c1-a1 {
+      padding-top: 24px
+    }
+
+    .x .c1-a2 {
+      padding-bottom: 24px
+    }
+
+    .x .c1-a8 {
+      max-height: 300px
+    }
+
+    .x .c1-aa {
+      margin-bottom: 4px
+    }
+
+    .x .c1-ab {
+      word-break: break-word
+    }
+
+    .x .c1-ac {
+      flex-basis: 50%
+    }
+
+    .x .c1-ad {
+      min-height: 40px
+    }
+
+    .x .c1-ae {
+      color: rgb(48, 48, 48)
+    }
+
+    .x .c1-af {
+      font-size: 12px
+    }
+
+    .x .c1-ag:nth-child(2) {
+      margin-left: 24px
+    }
+
+    .x .c1-ah:hover {
+      background-color: rgb(255, 255, 255)
+    }
+  </style>
+  <style data-glamor="cxs-xs-sheet">
+    @media (max-width: 767px) {
+      .x .c1-l {
+        padding-top: 40px
+      }
+    }
+
+    @media (max-width: 767px) {
+      .x .c1-m {
+        padding-bottom: 40px
+      }
+    }
+
+    @media (max-width: 767px) {
+      .x .c1-1i {
+        max-width: 250px
+      }
+    }
+
+    @media (max-width: 767px) {
+      .x .c1-1j {
+        padding-left: 4px
+      }
+    }
+
+    @media (max-width: 767px) {
+      .x .c1-1k {
+        padding-right: 4px
+      }
+    }
+
+    @media (max-width: 767px) {
+      .x .c1-2x {
+        justify-content: center
+      }
+    }
+
+    @media (max-width: 767px) {
+      .x .c1-2y {
+        max-width: 100%
+      }
+    }
+
+    @media (max-width: 767px) {
+      .x .c1-3e {
+        height: 104px
+      }
+    }
+
+    @media (max-width: 767px) {
+      .x .c1-3f {
+        max-width: 224px
+      }
+    }
+
+    @media (max-width: 767px) {
+      .x .c1-3g {
+        display: block
+      }
+    }
+
+    @media (max-width: 767px) {
+      .x .c1-3h {
+        max-height: 80px
+      }
+    }
+
+    @media (max-width: 767px) {
+      .x .c1-3i {
+        margin-top: 0px
+      }
+    }
+
+    @media (max-width: 767px) {
+      .x .c1-3j {
+        margin-right: auto
+      }
+    }
+
+    @media (max-width: 767px) {
+      .x .c1-3k {
+        margin-bottom: 0
+      }
+    }
+
+    @media (max-width: 767px) {
+      .x .c1-3l {
+        margin-left: auto
+      }
+    }
+
+    @media (max-width: 767px) {
+      .x .c1-4p {
+        width: 100%
+      }
+    }
+
+    @media (max-width: 767px) {
+      .x .c1-4q {
+        display: flex
+      }
+    }
+
+    @media (max-width: 767px) {
+      .x .c1-6y {
+        margin-bottom: 32px
+      }
+    }
+
+    @media (max-width: 767px) {
+      .x .c1-8i {
+        position: relative
+      }
+    }
+
+    @media (max-width: 767px) {
+      .x .c1-8j {
+        flex-direction: column
+      }
+    }
+
+    @media (max-width: 767px) {
+      .x .c1-8k {
+        background-color: rgb(255, 255, 255)
+      }
+    }
+
+    @media (max-width: 767px) {
+      .x .c1-8l {
+        box-shadow: 0 4px 12px 0 rgba(117, 117, 117, 0.4)
+      }
+    }
+
+    @media (max-width: 767px) {
+      .x .c1-8m {
+        padding-bottom: 16px
+      }
+    }
+
+    @media (max-width: 767px) {
+      .x .c1-8n {
+        max-height: 90vh
+      }
+    }
+
+    @media (max-width: 767px) {
+      .x .c1-8o {
+        width: auto
+      }
+    }
+
+    @media (max-width: 767px) {
+      .x .c1-8p {
+        border-radius: 12px
+      }
+    }
+
+    @media (max-width: 767px) {
+      .x .c1-8q {
+        margin-top: 16px
+      }
+    }
+
+    @media (max-width: 767px) {
+      .x .c1-8r {
+        margin-right: 16px
+      }
+    }
+
+    @media (max-width: 767px) {
+      .x .c1-8s {
+        margin-bottom: 16px
+      }
+    }
+
+    @media (max-width: 767px) {
+      .x .c1-8t {
+        margin-left: 16px
+      }
+    }
+
+    @media (max-width: 767px) {
+      .x .c1-8u {
+        max-width: 90vw
+      }
+    }
+  </style>
+  <style data-glamor="cxs-sm-sheet">
+    @media (min-width: 768px) {
+      .x .c1-d {
+        font-size: 16px
+      }
+    }
+
+    @media (min-width: 768px) {
+      .x .c1-16 {
+        width: 100%
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .x .c1-2z {
+        width: auto
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .x .c1-3m {
+        display: block
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .x .c1-3n {
+        max-height: 80px
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .x .c1-3o {
+        margin-top: 0
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .x .c1-3p {
+        margin-right: auto
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .x .c1-3q {
+        margin-bottom: 0
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .x .c1-3r {
+        margin-left: auto
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .x .c1-4r {
+        width: 100%
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .x .c1-57 {
+        right: 0px
+      }
+    }
+
+    @media (min-width: 768px) {
+      .x .c1-5t {
+        font-size: 30px
+      }
+    }
+
+    @media (min-width: 768px) {
+      .x .c1-68 {
+        font-size: 22px
+      }
+    }
+
+    @media (min-width: 768px) {
+      .x .c1-6h {
+        font-size: 38px
+      }
+    }
+
+    @media (min-width: 768px) {
+      .x .c1-6q {
+        margin-left: 8.333333333333332%
+      }
+    }
+
+    @media (min-width: 768px) {
+      .x .c1-6r {
+        flex-basis: 83.33333333333334%
+      }
+    }
+
+    @media (min-width: 768px) {
+      .x .c1-6s {
+        max-width: 83.33333333333334%
+      }
+    }
+
+    @media (min-width: 768px) {
+      .x .c1-7c {
+        display: none
+      }
+    }
+
+    @media (min-width: 768px) {
+      .x .c1-7m {
+        font-size: 14px
+      }
+    }
+
+    @media (min-width: 768px) {
+      .x .c1-7z {
+        position: absolute
+      }
+    }
+
+    @media (min-width: 768px) {
+      .x .c1-80 {
+        transform: none
+      }
+    }
+
+    @media (min-width: 768px) {
+      .x .c1-81 {
+        max-width: 600px
+      }
+    }
+
+    @media (min-width: 768px) {
+      .x .c1-82 {
+        margin-top: 24px
+      }
+    }
+
+    @media (min-width: 768px) {
+      .x .c1-83 {
+        margin-bottom: 24px
+      }
+    }
+
+    @media (min-width: 768px) {
+      .x .c1-84 {
+        margin-left: auto
+      }
+    }
+
+    @media (min-width: 768px) {
+      .x .c1-85 {
+        margin-right: auto
+      }
+    }
+
+    @media (min-width: 768px) {
+      .x .c1-86 {
+        display: flex
+      }
+    }
+
+    @media (min-width: 768px) {
+      .x .c1-87 {
+        align-items: center
+      }
+    }
+
+    @media (min-width: 768px) {
+      .x .c1-88 {
+        pointer-events: none
+      }
+    }
+
+    @media (min-width: 768px) {
+      .x .c1-89 {
+        justify-content: center
+      }
+    }
+
+    @media (min-width: 768px) {
+      .x .c1-8a:before {
+        display: block
+      }
+    }
+
+    @media (min-width: 768px) {
+      .x .c1-8b:before {
+        height: 90vh
+      }
+    }
+
+    @media (min-width: 768px) {
+      .x .c1-8c:before {
+        content: ""
+      }
+    }
+
+    @media (min-width: 768px) {
+      .x .c1-8v {
+        pointer-events: auto
+      }
+    }
+
+    @media (min-width: 768px) {
+      .x .c1-8w {
+        border-radius: 12px
+      }
+    }
+
+    @media (min-width: 768px) {
+      .x .c1-8x {
+        max-width: 515px
+      }
+    }
+
+    @media (min-width: 768px) {
+      .x .c1-96 {
+        padding-left: 0px
+      }
+    }
+
+    @media (min-width: 768px) {
+      .x .c1-97 {
+        padding-right: 0px
+      }
+    }
+
+    @media (min-width: 768px) {
+      .x .c1-9p {
+        width: auto
+      }
+    }
+
+    @media (min-width: 768px) {
+      .x .c1-a3 {
+        width: 400px
+      }
+    }
+
+    @media (min-width: 768px) {
+      .x .c1-a4 {
+        max-height: 500px
+      }
+    }
+
+    @media (min-width: 768px) {
+      .x .c1-a5 {
+        border-radius: 7px
+      }
+    }
+
+    @media (min-width: 768px) {
+      .x .c1-a6 {
+        margin-right: 24px
+      }
+    }
+
+    @media (min-width: 768px) {
+      .x .c1-a7 {
+        margin-left: 24px
+      }
+    }
+
+    @media (min-width: 768px) {
+      .x .c1-a9 {
+        max-height: 200px
+      }
+    }
+
+    @media (min-width: 768px) {
+      .x .c1-ai {
+        font-size: 12px
+      }
+    }
+  </style>
+  <style data-glamor="cxs-md-sheet">
+    @media (min-width: 1024px) {
+      .x .c1-e {
+        font-size: 16px
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .x .c1-u {
+        transition: filter 0.6s
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .x .c1-v:hover {
+        filter: invert(.2)
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .x .c1-17 {
+        width: 984px
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .x .c1-1e {
+        padding-top: 3px
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .x .c1-1f {
+        padding-right: 3px
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .x .c1-1g {
+        padding-bottom: 3px
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .x .c1-1h {
+        padding-left: 3px
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .x .c1-1l {
+        padding-left: 8px
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .x .c1-1m {
+        padding-right: 8px
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .x .c1-1y {
+        padding-top: 16px
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .x .c1-1z {
+        padding-bottom: 16px
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .x .c1-20 {
+        padding-left: 0px
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .x .c1-21 {
+        padding-right: 0px
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .x .c1-26 {
+        display: none
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .x .c1-36 {
+        display: inline-block
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .x .c1-3s {
+        height: 104px
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .x .c1-3t {
+        width: auto
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .x .c1-3u {
+        max-height: 104px
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .x .c1-3z {
+        display: flex
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .x .c1-43 {
+        flex-basis: 33.33333333333333%
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .x .c1-44 {
+        max-width: 33.33333333333333%
+      }
+    }
+
+    @media (min-width: 1024px) and (max-width: 1279px) {
+      .x .c1-56 {
+        right: 0px
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .x .c1-5u {
+        font-size: 30px
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .x .c1-69 {
+        min-width: 300px
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .x .c1-6a {
+        font-size: 22px
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .x .c1-6i {
+        text-align: center
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .x .c1-6j {
+        font-size: 38px
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .x .c1-6t {
+        margin-left: 16.666666666666664%
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .x .c1-6u {
+        flex-basis: 66.66666666666666%
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .x .c1-6v {
+        max-width: 66.66666666666666%
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .x .c1-7i {
+        flex-basis: 0%
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .x .c1-7j {
+        max-width: none
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .x .c1-7n {
+        text-align: left
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .x .c1-7o {
+        font-size: 14px
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .x .c1-7s {
+        text-align: right
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .x .c1-7t {
+        margin-top: 0
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .x .c1-8y {
+        max-width: 515px
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .x .c1-98 {
+        height: 234px
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .x .c1-9v {
+        z-index: 9999
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .x .c1-aj {
+        font-size: 12px
+      }
+    }
+  </style>
+  <style data-glamor="cxs-lg-sheet">
+    @media (min-width: 1280px) {
+      .x .c1-f {
+        font-size: 16px
+      }
+    }
+
+    @media (min-width: 1280px) {
+      .x .c1-18 {
+        width: 1160px
+      }
+    }
+
+    @media (min-width: 1280px) {
+      .x .c1-5v {
+        font-size: 32px
+      }
+    }
+
+    @media (min-width: 1280px) {
+      .x .c1-6b {
+        font-size: 22px
+      }
+    }
+
+    @media (min-width: 1280px) {
+      .x .c1-6k {
+        font-size: 44px
+      }
+    }
+
+    @media (min-width: 1280px) {
+      .x .c1-7p {
+        font-size: 14px
+      }
+    }
+
+    @media (min-width: 1280px) {
+      .x .c1-ak {
+        font-size: 12px
+      }
+    }
+  </style>
+  <style data-glamor="cxs-xl-sheet">
+    @media (min-width: 1536px) {
+      .x .c1-g {
+        font-size: 18px
+      }
+    }
+
+    @media (min-width: 1536px) {
+      .x .c1-19 {
+        width: 1280px
+      }
+    }
+
+    @media (min-width: 1536px) {
+      .x .c1-5w {
+        font-size: 36px
+      }
+    }
+
+    @media (min-width: 1536px) {
+      .x .c1-6c {
+        font-size: 24px
+      }
+    }
+
+    @media (min-width: 1536px) {
+      .x .c1-6l {
+        font-size: 48px
+      }
+    }
+
+    @media (min-width: 1536px) {
+      .x .c1-7q {
+        font-size: 16px
+      }
+    }
+
+    @media (min-width: 1536px) {
+      .x .c1-al {
+        font-size: 14px
+      }
+    }
+  </style>
+  <style>
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+  <style>
+    .page-inner {
+      background-color: rgb(22, 22, 22);
+      min-height: 100vh;
+    }
+  </style>
+  <script>"use strict";
+
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('/sw.js');
+      });
+    }</script>
+</head>
+
+<body class="x  x-fonts-ubuntu x-fonts-lato">
+  <div id="layout-ac-25-bc-45-c-8-ca-4-ca-8-8-af-7-f-260-fd-99529-e"
+    class="layout layout-layout layout-layout-layout-10 locale-en-US lang-en">
+    <div data-ux="Page" id="page-171861"
+      class="x-el x-el-div x-el c1-1 c1-2 c1-3 c1-4 c1-5 c1-6 c1-7 c1-8 c1-9 c1-a c1-b c1-c c1-d c1-e c1-f c1-g c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g">
+      <div data-ux="Block" class="x-el x-el-div page-inner c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g">
+        <div id="2adba2a3-3735-4dbd-ab4f-5045edf14469" class="widget widget-header widget-header-header-9">
+          <div data-ux="Header" role="main" data-aid="HEADER_WIDGET" id="n-171862"
+            class="x-el x-el-div x-el x-el c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g c1-1 c1-2 c1-h c1-b c1-c c1-d c1-e c1-f c1-g c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g">
+            <div>
+              <section data-ux="Section" data-aid="HEADER_SECTION"
+                class="x-el x-el-section c1-1 c1-2 c1-h c1-i c1-j c1-k c1-b c1-c c1-l c1-m c1-d c1-e c1-f c1-g">
+                <div data-ux="Block" class="x-el x-el-div c1-1 c1-2 c1-n c1-o c1-b c1-c c1-d c1-e c1-f c1-g">
+                  <div role="banner" data-ux="PromoBannerSeasonal" data-aid="BANNER_RENDERED"
+                    class="x-el x-el-div c1-1 c1-2 c1-p c1-q c1-r c1-s c1-n c1-t c1-b c1-c c1-d c1-u c1-e c1-v c1-f c1-g">
+                    <a data-ux="Element" href="calendar.html#19e4ee42-6c01-4f5d-a6c2-2e6e77e93ed6" target="" rel=""
+                      data-page="ddedc5a7-0cda-42ff-9716-723d2ddb0144"
+                      data-section-jump="19e4ee42-6c01-4f5d-a6c2-2e6e77e93ed6"
+                      aria-label="To see our calendar for upcoming closures for private events, please click here!"
+                      class="x-el x-el-a c1-1 c1-2 c1-w c1-x c1-b c1-c c1-d c1-e c1-f c1-g">
+                      <div data-ux="PromoBannerContainer"
+                        class="x-el x-el-div c1-1 c1-2 c1-y c1-z c1-10 c1-11 c1-12 c1-13 c1-14 c1-15 c1-b c1-c c1-16 c1-d c1-17 c1-e c1-18 c1-f c1-19 c1-g">
+                        <svg data-ux="SVG" viewBox=" 0 0 35 35" dataAids="SEASONAL_WINTER_LEFT_ICON_RENDERED"
+                          class="x-el x-el-svg c1-1 c1-2 c1-1a c1-1b c1-1c c1-1d c1-b c1-c c1-d c1-1e c1-1f c1-1g c1-1h c1-e c1-f c1-g">
+                          <g stroke="currentColor" fill="none" fill-rule="evenodd">
+                            <path
+                              d="M16.724 10.726l4.651 5.349M12.03 16.408L16.8 21.8M16.8 1.8v28M30.8 16.3h-28M15.8 1.3a1 1 0 1 1 1.999 0 1 1 0 0 1-2 0zM30.3 16.3a1 1 0 1 1 1.999 0 1 1 0 0 1-2 0zM1.3 16.3a1 1 0 1 1 1.999 0 1 1 0 0 1-2 0zM15.8 30.8a1 1 0 1 1 1.999 0 1 1 0 0 1-2 0zM23.05 10.05l-12.5 12.5M22.6 9.3a1 1 0 1 1 1.999-.002A1 1 0 0 1 22.6 9.3zM8.8 23.3a1 1 0 1 1 1.999 0 1 1 0 0 1-2 0zM16.99 5.545l10.02 10.961M17 27.3l-10.7-11M27.01 16.131l-10.02 10.96M6.59 17.091l10.02-10.96M22.925 22.086L10.688 9.328M22.459 22.826a1 1 0 1 0 2 .043 1 1 0 0 0-2-.043zM8.953 8.542a1.001 1.001 0 1 0 2.002.04 1.001 1.001 0 0 0-2.002-.04z">
+                            </path>
+                          </g>
+                        </svg>
+                        <div data-ux="Block"
+                          class="x-el x-el-div c1-1 c1-2 c1-b c1-c c1-1i c1-1j c1-1k c1-d c1-1l c1-1m c1-e c1-f c1-g">
+                          <p data-style-fixed="true" data-ux="PromoBannerText" data-aid="BANNER_TEXT_RENDERED"
+                            data-typography="BodyAlpha"
+                            class="x-el x-el-p c1-1 c1-2 c1-1n c1-1o c1-1p c1-1q c1-1r c1-1s c1-b c1-1c c1-c c1-1t c1-d c1-e c1-f c1-g">
+                            To see our calendar for upcoming closures for private events, please click here!</p>
+                        </div><svg data-ux="SVG" viewBox=" 0 0 35 35" dataAids="SEASONAL_WINTER_RIGHT_ICON_RENDERED"
+                          class="x-el x-el-svg c1-1 c1-2 c1-1a c1-1b c1-1c c1-1d c1-b c1-c c1-d c1-1e c1-1f c1-1g c1-1h c1-e c1-f c1-g">
+                          <g stroke="currentColor" fill="none" fill-rule="evenodd">
+                            <path
+                              d="M16.724 10.726l4.651 5.349M12.03 16.408L16.8 21.8M16.8 1.8v28M30.8 16.3h-28M15.8 1.3a1 1 0 1 1 1.999 0 1 1 0 0 1-2 0zM30.3 16.3a1 1 0 1 1 1.999 0 1 1 0 0 1-2 0zM1.3 16.3a1 1 0 1 1 1.999 0 1 1 0 0 1-2 0zM15.8 30.8a1 1 0 1 1 1.999 0 1 1 0 0 1-2 0zM23.05 10.05l-12.5 12.5M22.6 9.3a1 1 0 1 1 1.999-.002A1 1 0 0 1 22.6 9.3zM8.8 23.3a1 1 0 1 1 1.999 0 1 1 0 0 1-2 0zM16.99 5.545l10.02 10.961M17 27.3l-10.7-11M27.01 16.131l-10.02 10.96M6.59 17.091l10.02-10.96M22.925 22.086L10.688 9.328M22.459 22.826a1 1 0 1 0 2 .043 1 1 0 0 0-2-.043zM8.953 8.542a1.001 1.001 0 1 0 2.002.04 1.001 1.001 0 0 0-2.002-.04z">
+                            </path>
+                          </g>
+                        </svg>
+                      </div>
+                    </a></div>
+                  <div id="header_stickynav-anchor171865"></div>
+                  <div data-ux="Block" data-stickynav-wrapper="true"
+                    class="x-el x-el-div c1-1 c1-2 c1-1u c1-b c1-c c1-d c1-e c1-f c1-g">
+                    <div data-ux="Block" data-stickynav="true" id="header_stickynav171864"
+                      class="x-el x-el-div c1-1 c1-2 c1-h c1-b c1-c c1-d c1-e c1-f c1-g">
+                      <nav data-ux="Block"
+                        class="x-el x-el-nav c1-1 c1-2 c1-n c1-1v c1-1w c1-10 c1-11 c1-h c1-1x c1-b c1-c c1-d c1-1y c1-1z c1-20 c1-21 c1-e c1-f c1-g">
+                        <div data-ux="Block"
+                          class="x-el x-el-div c1-1 c1-2 c1-14 c1-22 c1-4 c1-13 c1-1q c1-23 c1-1r c1-24 c1-25 c1-b c1-c c1-d c1-26 c1-e c1-f c1-g">
+                          <div data-ux="Block"
+                            class="x-el x-el-div c1-1 c1-2 c1-27 c1-28 c1-29 c1-b c1-c c1-d c1-e c1-f c1-g">
+                            <div data-ux="Element" id="bs-1"
+                              class="x-el x-el-div c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g"><a rel="" role="button"
+                                aria-haspopup="menu" data-ux="LinkDropdown" data-toggle-ignore="true" id="171866"
+                                aria-expanded="false" toggleId="n-171862-navId-mobile" icon="hamburger"
+                                data-edit-interactive="true" data-aid="HAMBURGER_MENU_LINK"
+                                aria-label="Hamburger Site Navigation Icon" href="game-library.html#"
+                                data-typography="LinkAlpha"
+                                class="x-el x-el-a c1-2a c1-2b c1-w c1-1n c1-1o c1-13 c1-x c1-14 c1-2c c1-2d c1-2e c1-2f c1-2g c1-2h c1-b c1-c c1-2i c1-2j c1-2k c1-d c1-26 c1-e c1-f c1-g"
+                                data-tccl="ux2.HEADER.header9.Section.Default.Link.Dropdown.171867.click,click"><svg
+                                  viewBox="0 0 24 24" fill="currentColor" width="40px" height="40px"
+                                  data-ux="IconHamburger"
+                                  class="x-el x-el-svg c1-1 c1-2 c1-2l c1-2m c1-2n c1-2o c1-2p c1-2q c1-2r c1-b c1-c c1-d c1-e c1-f c1-g">
+                                  <g>
+                                    <path fill-rule="evenodd" d="M4 8h16V6H4z"></path>
+                                    <path fill-rule="evenodd" d="M4 13.096h16v-2.001H4z"></path>
+                                    <path fill-rule="evenodd" d="M4 18.346h16v-2H4z"></path>
+                                  </g>
+                                </svg></a></div>
+                          </div>
+                          <div data-ux="Block"
+                            class="x-el x-el-div c1-1 c1-2 c1-13 c1-2s c1-1s c1-15 c1-1o c1-2t c1-2u c1-b c1-c c1-d c1-e c1-f c1-g">
+                            <div data-ux="Block" data-aid="HEADER_LOGO_RENDERED"
+                              class="x-el x-el-div c1-2m c1-2v c1-2w c1-c c1-2x c1-2y c1-2z c1-d c1-e c1-f c1-g"><a
+                                rel="" role="link" aria-haspopup="menu" data-ux="Link"
+                                data-page="7bdde7db-2d77-46a2-af6a-a1664f6b3006" title="Pixel Paradise"
+                                href="index.html" data-typography="LinkAlpha"
+                                class="x-el x-el-a c1-2a c1-2b c1-w c1-1n c1-1o c1-30 c1-x c1-2d c1-2e c1-2f c1-2g c1-12 c1-31 c1-b c1-32 c1-c c1-2i c1-33 c1-2k c1-d c1-e c1-f c1-g"
+                                data-tccl="ux2.HEADER.header9.Logo.Default.Link.Default.171868.click,click">
+                                <div data-ux="Block"
+                                  class="x-el x-el-div c1-1 c1-2 c1-34 c1-28 c1-35 c1-29 c1-25 c1-b c1-c c1-d c1-36 c1-e c1-f c1-g">
+                                  <img
+                                    src="https://img1.wsimg.com/isteam/ip/ac25bc45-c8ca-4ca8-8af7-f260fd99529e/PixelParadiselogo.png/:/rs=h:104,cg:true,m/qt=q:95"
+                                    srcSet="https://img1.wsimg.com/isteam/ip/ac25bc45-c8ca-4ca8-8af7-f260fd99529e/PixelParadiselogo.png/:/rs=w:312,h:104,cg:true,m/cr=w:312,h:104/qt=q:95, https://img1.wsimg.com/isteam/ip/ac25bc45-c8ca-4ca8-8af7-f260fd99529e/PixelParadiselogo.png/:/rs=w:624,h:208,cg:true,m/cr=w:624,h:208/qt=q:95 2x, https://img1.wsimg.com/isteam/ip/ac25bc45-c8ca-4ca8-8af7-f260fd99529e/PixelParadiselogo.png/:/rs=w:936,h:312,cg:true,m/cr=w:936,h:312/qt=q:95 3x"
+                                    alt="Pixel Paradise" data-ux="ImageLogo" data-aid="HEADER_LOGO_IMAGE_RENDERED"
+                                    class="x-el x-el-img c1-1 c1-2 c1-31 c1-12 c1-y c1-z c1-1q c1-1r c1-37 c1-38 c1-39 c1-3a c1-3b c1-3c c1-34 c1-28 c1-35 c1-29 c1-3d c1-25 c1-b c1-c c1-3e c1-3f c1-3g c1-3h c1-3i c1-3j c1-3k c1-3l c1-3m c1-3n c1-3o c1-3p c1-3q c1-3r c1-d c1-3s c1-3t c1-3u c1-e c1-f c1-g" />
+                                </div>
+                              </a></div>
+                          </div>
+                          <div data-ux="Block"
+                            class="x-el x-el-div c1-1 c1-2 c1-27 c1-28 c1-29 c1-13 c1-3v c1-b c1-c c1-d c1-e c1-f c1-g">
+                          </div>
+                        </div>
+                        <div data-ux="Container"
+                          class="x-el x-el-div c1-1 c1-2 c1-y c1-z c1-10 c1-11 c1-12 c1-b c1-c c1-16 c1-d c1-17 c1-e c1-18 c1-f c1-19 c1-g">
+                          <div data-ux="Grid" id="navContainer-171873"
+                            class="x-el x-el-div c1-1 c1-2 c1-3w c1-3x c1-3y c1-22 c1-1q c1-23 c1-1r c1-24 c1-4 c1-34 c1-35 c1-b c1-c c1-d c1-3z c1-e c1-f c1-g">
+                            <div data-ux="GridCell"
+                              class="x-el x-el-div c1-1 c1-2 c1-3x c1-40 c1-41 c1-42 c1-12 c1-34 c1-28 c1-35 c1-29 c1-2c c1-13 c1-14 c1-b c1-c c1-d c1-43 c1-44 c1-e c1-f c1-g">
+                              <nav data-ux="Nav" data-aid="HEADER_NAV_RENDERED" role="navigation"
+                                class="x-el x-el-nav c1-1 c1-2 c1-12 c1-45 c1-b c1-c c1-d c1-e c1-f c1-g">
+                                <div data-ux="Block" id="n-171862171871-navId-1"
+                                  class="x-el x-el-div c1-1 c1-2 c1-n c1-13 c1-14 c1-34 c1-28 c1-35 c1-29 c1-b c1-c c1-d c1-e c1-f c1-g">
+                                  <div data-ux="Block"
+                                    class="x-el x-el-div nav-item c1-1 c1-2 c1-2n c1-24 c1-46 c1-47 c1-n c1-48 c1-2m c1-b c1-c c1-49 c1-d c1-e c1-f c1-g">
+                                    <a rel="" role="link" aria-haspopup="menu" data-ux="NavLink" target=""
+                                      data-page="7bdde7db-2d77-46a2-af6a-a1664f6b3006" data-edit-interactive="true"
+                                      href="index.html" data-typography="NavAlpha"
+                                      class="x-el x-el-a c1-1 c1-4a c1-w c1-1n c1-1o c1-4b c1-x c1-4c c1-4d c1-4e c1-4f c1-2r c1-2p c1-2o c1-2q c1-b c1-2h c1-c c1-1t c1-33 c1-4g c1-d c1-e c1-f c1-g"
+                                      data-tccl="ux2.HEADER.header9.Nav.Default.Link.Default.171875.click,click">Home</a>
+                                  </div>
+                                  <div data-ux="Block"
+                                    class="x-el x-el-div nav-item c1-1 c1-2 c1-2n c1-24 c1-46 c1-47 c1-n c1-48 c1-2m c1-b c1-c c1-49 c1-d c1-e c1-f c1-g">
+                                    <a rel="" role="link" aria-haspopup="false" data-ux="NavLink" target=""
+                                      data-page="79788667-056a-4071-b7d3-76113260e848" data-edit-interactive="true"
+                                      href="pricing.html" data-typography="NavAlpha"
+                                      class="x-el x-el-a c1-1 c1-4a c1-w c1-1n c1-1o c1-4b c1-x c1-4c c1-4d c1-4e c1-4f c1-2r c1-2p c1-2o c1-2q c1-b c1-2h c1-c c1-1t c1-33 c1-4g c1-d c1-e c1-f c1-g"
+                                      data-tccl="ux2.HEADER.header9.Nav.Default.Link.Default.171876.click,click">Pricing</a>
+                                  </div>
+                                  <div data-ux="Block"
+                                    class="x-el x-el-div nav-item c1-1 c1-2 c1-2n c1-24 c1-46 c1-47 c1-n c1-48 c1-2m c1-b c1-c c1-49 c1-d c1-e c1-f c1-g">
+                                    <a rel="" role="link" aria-haspopup="false" data-ux="NavLink" target=""
+                                      data-page="ddedc5a7-0cda-42ff-9716-723d2ddb0144" data-edit-interactive="true"
+                                      href="calendar.html" data-typography="NavAlpha"
+                                      class="x-el x-el-a c1-1 c1-4a c1-w c1-1n c1-1o c1-4b c1-x c1-4c c1-4d c1-4e c1-4f c1-2r c1-2p c1-2o c1-2q c1-b c1-2h c1-c c1-1t c1-33 c1-4g c1-d c1-e c1-f c1-g"
+                                      data-tccl="ux2.HEADER.header9.Nav.Default.Link.Default.171877.click,click">Calendar</a>
+                                  </div>
+                                  <div data-ux="Block"
+                                    class="x-el x-el-div nav-item c1-1 c1-2 c1-2n c1-24 c1-46 c1-47 c1-n c1-48 c1-2m c1-b c1-c c1-49 c1-d c1-e c1-f c1-g">
+                                    <a rel="" role="link" aria-haspopup="false" data-ux="NavLink" target=""
+                                      data-page="f3590cd9-82f4-4af6-ade1-963e08a2b4f6" data-edit-interactive="true"
+                                      href="event-booking.html" data-typography="NavAlpha"
+                                      class="x-el x-el-a c1-1 c1-4a c1-w c1-1n c1-1o c1-4b c1-x c1-4c c1-4d c1-4e c1-4f c1-2r c1-2p c1-2o c1-2q c1-b c1-2h c1-c c1-1t c1-33 c1-4g c1-d c1-e c1-f c1-g"
+                                      data-tccl="ux2.HEADER.header9.Nav.Default.Link.Default.171878.click,click">Event
+                                      Booking</a></div>
+                                  <div data-ux="Block"
+                                    class="x-el x-el-div nav-item c1-1 c1-2 c1-2n c1-24 c1-46 c1-47 c1-n c1-48 c1-2m c1-b c1-c c1-49 c1-d c1-e c1-f c1-g">
+                                    <a rel="" role="link" aria-haspopup="false" data-ux="NavLink" target=""
+                                      data-page="78cb5b32-abbd-418a-8b4b-f815c99fe5e9" data-edit-interactive="true"
+                                      href="contact-us.html" data-typography="NavAlpha"
+                                      class="x-el x-el-a c1-1 c1-4a c1-w c1-1n c1-1o c1-4b c1-x c1-4c c1-4d c1-4e c1-4f c1-2r c1-2p c1-2o c1-2q c1-b c1-2h c1-c c1-1t c1-33 c1-4g c1-d c1-e c1-f c1-g"
+                                      data-tccl="ux2.HEADER.header9.Nav.Default.Link.Default.171879.click,click">Contact
+                                      Us</a></div>
+                                  <div data-ux="Block"
+                                    class="x-el x-el-div nav-item c1-1 c1-2 c1-2n c1-24 c1-46 c1-47 c1-n c1-48 c1-2m c1-b c1-c c1-49 c1-d c1-e c1-f c1-g">
+                                    <a rel="" role="link" aria-haspopup="false" data-ux="NavLink" target=""
+                                      data-page="7f2835d1-74ae-44aa-9ee5-a804aabb6289" data-edit-interactive="true"
+                                      href="membership-plans.html" data-typography="NavAlpha"
+                                      class="x-el x-el-a c1-1 c1-4a c1-w c1-1n c1-1o c1-4b c1-x c1-4c c1-4d c1-4e c1-4f c1-2r c1-2p c1-2o c1-2q c1-b c1-2h c1-c c1-1t c1-33 c1-4g c1-d c1-e c1-f c1-g"
+                                      data-tccl="ux2.HEADER.header9.Nav.Default.Link.Default.171880.click,click">Membership
+                                      Plans</a></div>
+                                  <div data-ux="Block"
+                                    class="x-el x-el-div nav-item c1-1 c1-2 c1-2n c1-24 c1-46 c1-47 c1-n c1-48 c1-2m c1-b c1-c c1-49 c1-d c1-e c1-f c1-g">
+                                    <a rel="" role="link" aria-haspopup="false" data-ux="NavLinkActive" target=""
+                                      data-page="b556edef-8c4b-4a98-8163-2856db2870bd" data-edit-interactive="true"
+                                      href="game-library.html" data-typography="NavAlpha"
+                                      class="x-el x-el-a c1-1 c1-4a c1-w c1-1n c1-1o c1-4b c1-x c1-4h c1-4i c1-4j c1-4k c1-4l c1-4m c1-4n c1-b c1-32 c1-c c1-4o c1-33 c1-4g c1-d c1-e c1-f c1-g"
+                                      data-tccl="ux2.HEADER.header9.Nav.Default.Link.Active.171881.click,click">Game
+                                      Library</a></div>
+                                </div>
+                              </nav>
+                            </div>
+                            <div data-ux="GridCell"
+                              class="x-el x-el-div c1-1 c1-2 c1-3x c1-40 c1-41 c1-42 c1-12 c1-34 c1-28 c1-35 c1-29 c1-15 c1-1s c1-24 c1-23 c1-t c1-13 c1-14 c1-b c1-c c1-d c1-43 c1-44 c1-e c1-f c1-g">
+                              <div data-ux="Block" data-aid="HEADER_LOGO_RENDERED"
+                                class="x-el x-el-div c1-2m c1-2v c1-2w c1-1s c1-40 c1-c c1-4p c1-4q c1-2x c1-4r c1-d c1-e c1-f c1-g">
+                                <a rel="" role="link" aria-haspopup="menu" data-ux="Link"
+                                  data-page="7bdde7db-2d77-46a2-af6a-a1664f6b3006" title="Pixel Paradise"
+                                  href="index.html" data-typography="LinkAlpha"
+                                  class="x-el x-el-a c1-2a c1-2b c1-w c1-1n c1-1o c1-30 c1-x c1-2d c1-2e c1-2f c1-2g c1-12 c1-31 c1-b c1-32 c1-c c1-2i c1-33 c1-2k c1-d c1-e c1-f c1-g"
+                                  data-tccl="ux2.HEADER.header9.Logo.Default.Link.Default.171882.click,click">
+                                  <div data-ux="Block"
+                                    class="x-el x-el-div c1-1 c1-2 c1-34 c1-28 c1-35 c1-29 c1-25 c1-b c1-c c1-d c1-36 c1-e c1-f c1-g">
+                                    <img
+                                      src="https://img1.wsimg.com/isteam/ip/ac25bc45-c8ca-4ca8-8af7-f260fd99529e/PixelParadiselogo.png/:/rs=h:104,cg:true,m/qt=q:95"
+                                      srcSet="https://img1.wsimg.com/isteam/ip/ac25bc45-c8ca-4ca8-8af7-f260fd99529e/PixelParadiselogo.png/:/rs=w:312,h:104,cg:true,m/cr=w:312,h:104/qt=q:95, https://img1.wsimg.com/isteam/ip/ac25bc45-c8ca-4ca8-8af7-f260fd99529e/PixelParadiselogo.png/:/rs=w:624,h:208,cg:true,m/cr=w:624,h:208/qt=q:95 2x, https://img1.wsimg.com/isteam/ip/ac25bc45-c8ca-4ca8-8af7-f260fd99529e/PixelParadiselogo.png/:/rs=w:936,h:312,cg:true,m/cr=w:936,h:312/qt=q:95 3x"
+                                      alt="Pixel Paradise" data-ux="ImageLogo" data-aid="HEADER_LOGO_IMAGE_RENDERED"
+                                      id="n-171862"
+                                      class="x-el x-el-img c1-1 c1-2 c1-31 c1-12 c1-y c1-z c1-1q c1-1r c1-37 c1-38 c1-39 c1-3a c1-3b c1-3c c1-34 c1-28 c1-35 c1-29 c1-3d c1-25 c1-b c1-c c1-3e c1-3f c1-3g c1-3h c1-3i c1-3j c1-3k c1-3l c1-3m c1-3n c1-3o c1-3p c1-3q c1-3r c1-d c1-3s c1-3t c1-3u c1-e c1-f c1-g" />
+                                  </div>
+                                </a></div>
+                            </div>
+                            <div data-ux="GridCell"
+                              class="x-el x-el-div c1-1 c1-2 c1-3x c1-40 c1-41 c1-42 c1-12 c1-34 c1-28 c1-35 c1-29 c1-3v c1-13 c1-14 c1-b c1-c c1-d c1-43 c1-44 c1-e c1-f c1-g">
+                              <nav data-ux="Nav" data-aid="HEADER_NAV_RENDERED" role="navigation"
+                                class="x-el x-el-nav c1-1 c1-2 c1-12 c1-45 c1-b c1-c c1-d c1-e c1-f c1-g">
+                                <div data-ux="Block" id="n-171862171872-navId-2"
+                                  class="x-el x-el-div c1-1 c1-2 c1-n c1-13 c1-14 c1-34 c1-28 c1-35 c1-29 c1-b c1-c c1-d c1-e c1-f c1-g">
+                                  <div data-ux="Block"
+                                    class="x-el x-el-div nav-item c1-1 c1-2 c1-2n c1-24 c1-46 c1-47 c1-n c1-48 c1-2m c1-b c1-c c1-49 c1-d c1-e c1-f c1-g">
+                                    <a rel="" role="link" aria-haspopup="menu" data-ux="NavLink" target=""
+                                      data-page="7bdde7db-2d77-46a2-af6a-a1664f6b3006" data-edit-interactive="true"
+                                      href="index.html" data-typography="NavAlpha"
+                                      class="x-el x-el-a c1-1 c1-4a c1-w c1-1n c1-1o c1-4b c1-x c1-4c c1-4d c1-4e c1-4f c1-2r c1-2p c1-2o c1-2q c1-b c1-2h c1-c c1-1t c1-33 c1-4g c1-d c1-e c1-f c1-g"
+                                      data-tccl="ux2.HEADER.header9.Nav.Default.Link.Default.171884.click,click">Home</a>
+                                  </div>
+                                  <div data-ux="Block"
+                                    class="x-el x-el-div nav-item c1-1 c1-2 c1-2n c1-24 c1-46 c1-47 c1-n c1-48 c1-2m c1-b c1-c c1-49 c1-d c1-e c1-f c1-g">
+                                    <a rel="" role="link" aria-haspopup="false" data-ux="NavLink" target=""
+                                      data-page="79788667-056a-4071-b7d3-76113260e848" data-edit-interactive="true"
+                                      href="pricing.html" data-typography="NavAlpha"
+                                      class="x-el x-el-a c1-1 c1-4a c1-w c1-1n c1-1o c1-4b c1-x c1-4c c1-4d c1-4e c1-4f c1-2r c1-2p c1-2o c1-2q c1-b c1-2h c1-c c1-1t c1-33 c1-4g c1-d c1-e c1-f c1-g"
+                                      data-tccl="ux2.HEADER.header9.Nav.Default.Link.Default.171885.click,click">Pricing</a>
+                                  </div>
+                                  <div data-ux="Block"
+                                    class="x-el x-el-div nav-item c1-1 c1-2 c1-2n c1-24 c1-46 c1-47 c1-n c1-48 c1-2m c1-b c1-c c1-49 c1-d c1-e c1-f c1-g">
+                                    <a rel="" role="link" aria-haspopup="false" data-ux="NavLink" target=""
+                                      data-page="ddedc5a7-0cda-42ff-9716-723d2ddb0144" data-edit-interactive="true"
+                                      href="calendar.html" data-typography="NavAlpha"
+                                      class="x-el x-el-a c1-1 c1-4a c1-w c1-1n c1-1o c1-4b c1-x c1-4c c1-4d c1-4e c1-4f c1-2r c1-2p c1-2o c1-2q c1-b c1-2h c1-c c1-1t c1-33 c1-4g c1-d c1-e c1-f c1-g"
+                                      data-tccl="ux2.HEADER.header9.Nav.Default.Link.Default.171886.click,click">Calendar</a>
+                                  </div>
+                                  <div data-ux="Block"
+                                    class="x-el x-el-div nav-item c1-1 c1-2 c1-2n c1-24 c1-46 c1-47 c1-n c1-48 c1-2m c1-b c1-c c1-49 c1-d c1-e c1-f c1-g">
+                                    <a rel="" role="link" aria-haspopup="false" data-ux="NavLink" target=""
+                                      data-page="f3590cd9-82f4-4af6-ade1-963e08a2b4f6" data-edit-interactive="true"
+                                      href="event-booking.html" data-typography="NavAlpha"
+                                      class="x-el x-el-a c1-1 c1-4a c1-w c1-1n c1-1o c1-4b c1-x c1-4c c1-4d c1-4e c1-4f c1-2r c1-2p c1-2o c1-2q c1-b c1-2h c1-c c1-1t c1-33 c1-4g c1-d c1-e c1-f c1-g"
+                                      data-tccl="ux2.HEADER.header9.Nav.Default.Link.Default.171887.click,click">Event
+                                      Booking</a></div>
+                                  <div data-ux="Block"
+                                    class="x-el x-el-div nav-item c1-1 c1-2 c1-2n c1-24 c1-46 c1-47 c1-n c1-48 c1-2m c1-b c1-c c1-49 c1-d c1-e c1-f c1-g">
+                                    <a rel="" role="link" aria-haspopup="false" data-ux="NavLink" target=""
+                                      data-page="78cb5b32-abbd-418a-8b4b-f815c99fe5e9" data-edit-interactive="true"
+                                      href="contact-us.html" data-typography="NavAlpha"
+                                      class="x-el x-el-a c1-1 c1-4a c1-w c1-1n c1-1o c1-4b c1-x c1-4c c1-4d c1-4e c1-4f c1-2r c1-2p c1-2o c1-2q c1-b c1-2h c1-c c1-1t c1-33 c1-4g c1-d c1-e c1-f c1-g"
+                                      data-tccl="ux2.HEADER.header9.Nav.Default.Link.Default.171888.click,click">Contact
+                                      Us</a></div>
+                                  <div data-ux="Block"
+                                    class="x-el x-el-div nav-item c1-1 c1-2 c1-2n c1-24 c1-46 c1-47 c1-n c1-48 c1-2m c1-b c1-c c1-49 c1-d c1-e c1-f c1-g">
+                                    <a rel="" role="link" aria-haspopup="false" data-ux="NavLink" target=""
+                                      data-page="7f2835d1-74ae-44aa-9ee5-a804aabb6289" data-edit-interactive="true"
+                                      href="membership-plans.html" data-typography="NavAlpha"
+                                      class="x-el x-el-a c1-1 c1-4a c1-w c1-1n c1-1o c1-4b c1-x c1-4c c1-4d c1-4e c1-4f c1-2r c1-2p c1-2o c1-2q c1-b c1-2h c1-c c1-1t c1-33 c1-4g c1-d c1-e c1-f c1-g"
+                                      data-tccl="ux2.HEADER.header9.Nav.Default.Link.Default.171889.click,click">Membership
+                                      Plans</a></div>
+                                  <div data-ux="Block"
+                                    class="x-el x-el-div nav-item c1-1 c1-2 c1-2n c1-24 c1-46 c1-47 c1-n c1-48 c1-2m c1-b c1-c c1-49 c1-d c1-e c1-f c1-g">
+                                    <a rel="" role="link" aria-haspopup="false" data-ux="NavLinkActive" target=""
+                                      data-page="b556edef-8c4b-4a98-8163-2856db2870bd" data-edit-interactive="true"
+                                      href="game-library.html" data-typography="NavAlpha"
+                                      class="x-el x-el-a c1-1 c1-4a c1-w c1-1n c1-1o c1-4b c1-x c1-4h c1-4i c1-4j c1-4k c1-4l c1-4m c1-4n c1-b c1-32 c1-c c1-4o c1-33 c1-4g c1-d c1-e c1-f c1-g"
+                                      data-tccl="ux2.HEADER.header9.Nav.Default.Link.Active.171890.click,click">Game
+                                      Library</a></div>
+                                  <div data-ux="Block"
+                                    class="x-el x-el-div nav-item c1-1 c1-2 c1-2n c1-24 c1-46 c1-47 c1-n c1-48 c1-2m c1-b c1-c c1-49 c1-d c1-e c1-f c1-g">
+                                    <div data-ux="Element" id="bs-2"
+                                      class="x-el x-el-div c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g"><a rel=""
+                                        role="button" aria-haspopup="menu" data-ux="NavLinkDropdown"
+                                        data-toggle-ignore="true" id="171891" aria-expanded="false" data-aid="NAV_MORE"
+                                        data-edit-interactive="true" href="game-library.html#"
+                                        data-typography="NavAlpha"
+                                        class="x-el x-el-a c1-1 c1-4a c1-w c1-1n c1-1o c1-13 c1-x c1-14 c1-b c1-2h c1-c c1-1t c1-33 c1-4g c1-d c1-e c1-f c1-g"
+                                        data-tccl="ux2.HEADER.header9.Nav.Default.Link.Dropdown.171892.click,click">
+                                        <div style="pointer-events:none;display:flex;align-items:center"
+                                          data-aid="NAV_MORE"><span style="margin-right:4px">More</span><svg
+                                            viewBox="0 0 24 24" fill="currentColor" width="16" height="16"
+                                            data-ux="Icon"
+                                            class="x-el x-el-svg c1-1 c1-2 c1-2l c1-2m c1-4s c1-4t c1-37 c1-n c1-x c1-b c1-c c1-d c1-e c1-f c1-g">
+                                            <path fill-rule="evenodd"
+                                              d="M18.605 7l-6.793 7.024-6.375-7.002L4 8.467 11.768 17l.485-.501L20 8.489z">
+                                            </path>
+                                          </svg></div>
+                                      </a></div>
+                                    <ul data-ux="Dropdown" role="menu" id="more-171883"
+                                      class="x-el x-el-ul c1-1 c1-2 c1-4u c1-4v c1-h c1-4w c1-4x c1-4y c1-4z c1-50 c1-51 c1-52 c1-47 c1-53 c1-54 c1-3w c1-55 c1-b c1-c c1-56 c1-57 c1-d c1-e c1-f c1-g">
+                                      <li data-ux="ListItem" role="menuitem"
+                                        class="x-el x-el-li c1-1 c1-2 c1-58 c1-1r c1-4b c1-59 c1-b c1-c c1-5a c1-d c1-e c1-f c1-g">
+                                        <a rel="" role="link" aria-haspopup="menu" data-ux="NavMoreMenuLink" target=""
+                                          data-page="7bdde7db-2d77-46a2-af6a-a1664f6b3006" data-edit-interactive="true"
+                                          aria-labelledby="more-171883" href="index.html" data-typography="NavAlpha"
+                                          class="x-el x-el-a c1-1 c1-4a c1-w c1-1n c1-1o c1-2m c1-x c1-5b c1-5c c1-1p c1-b c1-2h c1-c c1-1t c1-33 c1-4g c1-d c1-e c1-f c1-g"
+                                          data-tccl="ux2.HEADER.header9.Nav.MoreMenu.Link.Default.171893.click,click">Home</a>
+                                      </li>
+                                      <li data-ux="ListItem" role="menuitem"
+                                        class="x-el x-el-li c1-1 c1-2 c1-58 c1-1r c1-4b c1-59 c1-b c1-c c1-5a c1-d c1-e c1-f c1-g">
+                                        <a rel="" role="link" aria-haspopup="false" data-ux="NavMoreMenuLink" target=""
+                                          data-page="79788667-056a-4071-b7d3-76113260e848" data-edit-interactive="true"
+                                          aria-labelledby="more-171883" href="pricing.html" data-typography="NavAlpha"
+                                          class="x-el x-el-a c1-1 c1-4a c1-w c1-1n c1-1o c1-2m c1-x c1-5b c1-5c c1-1p c1-b c1-2h c1-c c1-1t c1-33 c1-4g c1-d c1-e c1-f c1-g"
+                                          data-tccl="ux2.HEADER.header9.Nav.MoreMenu.Link.Default.171894.click,click">Pricing</a>
+                                      </li>
+                                      <li data-ux="ListItem" role="menuitem"
+                                        class="x-el x-el-li c1-1 c1-2 c1-58 c1-1r c1-4b c1-59 c1-b c1-c c1-5a c1-d c1-e c1-f c1-g">
+                                        <a rel="" role="link" aria-haspopup="false" data-ux="NavMoreMenuLink" target=""
+                                          data-page="ddedc5a7-0cda-42ff-9716-723d2ddb0144" data-edit-interactive="true"
+                                          aria-labelledby="more-171883" href="calendar.html" data-typography="NavAlpha"
+                                          class="x-el x-el-a c1-1 c1-4a c1-w c1-1n c1-1o c1-2m c1-x c1-5b c1-5c c1-1p c1-b c1-2h c1-c c1-1t c1-33 c1-4g c1-d c1-e c1-f c1-g"
+                                          data-tccl="ux2.HEADER.header9.Nav.MoreMenu.Link.Default.171895.click,click">Calendar</a>
+                                      </li>
+                                      <li data-ux="ListItem" role="menuitem"
+                                        class="x-el x-el-li c1-1 c1-2 c1-58 c1-1r c1-4b c1-59 c1-b c1-c c1-5a c1-d c1-e c1-f c1-g">
+                                        <a rel="" role="link" aria-haspopup="false" data-ux="NavMoreMenuLink" target=""
+                                          data-page="f3590cd9-82f4-4af6-ade1-963e08a2b4f6" data-edit-interactive="true"
+                                          aria-labelledby="more-171883" href="event-booking.html"
+                                          data-typography="NavAlpha"
+                                          class="x-el x-el-a c1-1 c1-4a c1-w c1-1n c1-1o c1-2m c1-x c1-5b c1-5c c1-1p c1-b c1-2h c1-c c1-1t c1-33 c1-4g c1-d c1-e c1-f c1-g"
+                                          data-tccl="ux2.HEADER.header9.Nav.MoreMenu.Link.Default.171896.click,click">Event
+                                          Booking</a></li>
+                                      <li data-ux="ListItem" role="menuitem"
+                                        class="x-el x-el-li c1-1 c1-2 c1-58 c1-1r c1-4b c1-59 c1-b c1-c c1-5a c1-d c1-e c1-f c1-g">
+                                        <a rel="" role="link" aria-haspopup="false" data-ux="NavMoreMenuLink" target=""
+                                          data-page="78cb5b32-abbd-418a-8b4b-f815c99fe5e9" data-edit-interactive="true"
+                                          aria-labelledby="more-171883" href="contact-us.html"
+                                          data-typography="NavAlpha"
+                                          class="x-el x-el-a c1-1 c1-4a c1-w c1-1n c1-1o c1-2m c1-x c1-5b c1-5c c1-1p c1-b c1-2h c1-c c1-1t c1-33 c1-4g c1-d c1-e c1-f c1-g"
+                                          data-tccl="ux2.HEADER.header9.Nav.MoreMenu.Link.Default.171897.click,click">Contact
+                                          Us</a></li>
+                                      <li data-ux="ListItem" role="menuitem"
+                                        class="x-el x-el-li c1-1 c1-2 c1-58 c1-1r c1-4b c1-59 c1-b c1-c c1-5a c1-d c1-e c1-f c1-g">
+                                        <a rel="" role="link" aria-haspopup="false" data-ux="NavMoreMenuLink" target=""
+                                          data-page="7f2835d1-74ae-44aa-9ee5-a804aabb6289" data-edit-interactive="true"
+                                          aria-labelledby="more-171883" href="membership-plans.html"
+                                          data-typography="NavAlpha"
+                                          class="x-el x-el-a c1-1 c1-4a c1-w c1-1n c1-1o c1-2m c1-x c1-5b c1-5c c1-1p c1-b c1-2h c1-c c1-1t c1-33 c1-4g c1-d c1-e c1-f c1-g"
+                                          data-tccl="ux2.HEADER.header9.Nav.MoreMenu.Link.Default.171898.click,click">Membership
+                                          Plans</a></li>
+                                      <li data-ux="ListItem" role="menuitem"
+                                        class="x-el x-el-li c1-1 c1-2 c1-58 c1-1r c1-4b c1-59 c1-b c1-c c1-5a c1-d c1-e c1-f c1-g">
+                                        <a rel="" role="link" aria-haspopup="false" data-ux="NavMoreMenuLinkActive"
+                                          target="" data-page="b556edef-8c4b-4a98-8163-2856db2870bd"
+                                          data-edit-interactive="true" aria-labelledby="more-171883"
+                                          href="game-library.html" data-typography="NavAlpha"
+                                          class="x-el x-el-a c1-1 c1-4a c1-w c1-1n c1-1o c1-2m c1-x c1-4h c1-4i c1-5c c1-4k c1-4l c1-4m c1-4n c1-5b c1-1p c1-b c1-32 c1-c c1-4o c1-33 c1-4g c1-d c1-e c1-f c1-g"
+                                          data-tccl="ux2.HEADER.header9.Nav.MoreMenu.Link.Active.171899.click,click">Game
+                                          Library</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </nav>
+                            </div>
+                          </div>
+                        </div>
+                      </nav>
+                    </div>
+                  </div>
+                  <div role="navigation" data-ux="NavigationDrawer" id="n-171862-navId-mobile"
+                    class="x-el x-el-div c1-1 c1-2 c1-h c1-5d c1-5e c1-4 c1-5f c1-54 c1-5g c1-i c1-5h c1-5i c1-5j c1-5k c1-5l c1-5m c1-13 c1-5n c1-b c1-c c1-d c1-e c1-f c1-g">
+                    <div data-ux="Block" class="x-el x-el-div c1-1 c1-2 c1-10 c1-11 c1-b c1-c c1-d c1-e c1-f c1-g"><svg
+                        viewBox="0 0 24 24" fill="currentColor" width="40px" height="40px" data-ux="CloseIcon"
+                        data-edit-interactive="true" data-close="true"
+                        class="x-el x-el-svg c1-1 c1-2 c1-2h c1-2m c1-37 c1-2o c1-2p c1-2q c1-2r c1-x c1-5o c1-5p c1-50 c1-5q c1-5r c1-5s c1-b c1-2j c1-5t c1-5u c1-5v c1-5w">
+                        <path fill-rule="evenodd"
+                          d="M17.999 4l-6.293 6.293L5.413 4 4 5.414l6.292 6.293L4 18l1.413 1.414 6.293-6.292 6.293 6.292L19.414 18l-6.294-6.293 6.294-6.293z">
+                        </path>
+                      </svg></div>
+                    <div data-ux="Container" id="n-171862-navContainerId-mobile"
+                      class="x-el x-el-div c1-1 c1-2 c1-y c1-z c1-10 c1-11 c1-12 c1-54 c1-5x c1-4 c1-5y c1-b c1-c c1-16 c1-d c1-17 c1-e c1-18 c1-f c1-19 c1-g">
+                      <div data-ux="Block" id="n-171862-navLinksContentId-mobile"
+                        class="x-el x-el-div c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g">
+                        <ul role="menu" data-ux="NavigationDrawerList" id="n-171862-navListId-mobile"
+                          class="x-el x-el-ul c1-1 c1-2 c1-1q c1-1r c1-24 c1-23 c1-5z c1-60 c1-61 c1-59 c1-34 c1-35 c1-29 c1-28 c1-1n c1-1o c1-b c1-c c1-d c1-e c1-f c1-g">
+                          <li role="menuitem" data-ux="NavigationDrawerListItem"
+                            class="x-el x-el-li c1-1 c1-2 c1-58 c1-1r c1-4b c1-62 c1-63 c1-4h c1-b c1-c c1-5a c1-64 c1-d c1-e c1-f c1-g">
+                            <a rel="" role="link" aria-haspopup="menu" data-ux="NavigationDrawerLink" target=""
+                              data-page="7bdde7db-2d77-46a2-af6a-a1664f6b3006" data-edit-interactive="true"
+                              data-close="true" href="index.html" data-typography="NavBeta"
+                              class="x-el x-el-a c1-1 c1-2 c1-w c1-1n c1-1o c1-13 c1-x c1-4w c1-4x c1-10 c1-11 c1-14 c1-65 c1-66 c1-b c1-2h c1-67 c1-1t c1-33 c1-4g c1-68 c1-69 c1-6a c1-6b c1-6c"
+                              data-tccl="ux2.HEADER.header9.NavigationDrawer.Default.Link.Default.171900.click,click"><span>Home</span></a>
+                          </li>
+                          <li role="menuitem" data-ux="NavigationDrawerListItem"
+                            class="x-el x-el-li c1-1 c1-2 c1-58 c1-1r c1-4b c1-62 c1-63 c1-4h c1-b c1-c c1-5a c1-64 c1-d c1-e c1-f c1-g">
+                            <a rel="" role="link" aria-haspopup="false" data-ux="NavigationDrawerLink" target=""
+                              data-page="79788667-056a-4071-b7d3-76113260e848" data-edit-interactive="true"
+                              data-close="true" href="pricing.html" data-typography="NavBeta"
+                              class="x-el x-el-a c1-1 c1-2 c1-w c1-1n c1-1o c1-13 c1-x c1-4w c1-4x c1-10 c1-11 c1-14 c1-65 c1-66 c1-b c1-2h c1-67 c1-1t c1-33 c1-4g c1-68 c1-69 c1-6a c1-6b c1-6c"
+                              data-tccl="ux2.HEADER.header9.NavigationDrawer.Default.Link.Default.171901.click,click"><span>Pricing</span></a>
+                          </li>
+                          <li role="menuitem" data-ux="NavigationDrawerListItem"
+                            class="x-el x-el-li c1-1 c1-2 c1-58 c1-1r c1-4b c1-62 c1-63 c1-4h c1-b c1-c c1-5a c1-64 c1-d c1-e c1-f c1-g">
+                            <a rel="" role="link" aria-haspopup="false" data-ux="NavigationDrawerLink" target=""
+                              data-page="ddedc5a7-0cda-42ff-9716-723d2ddb0144" data-edit-interactive="true"
+                              data-close="true" href="calendar.html" data-typography="NavBeta"
+                              class="x-el x-el-a c1-1 c1-2 c1-w c1-1n c1-1o c1-13 c1-x c1-4w c1-4x c1-10 c1-11 c1-14 c1-65 c1-66 c1-b c1-2h c1-67 c1-1t c1-33 c1-4g c1-68 c1-69 c1-6a c1-6b c1-6c"
+                              data-tccl="ux2.HEADER.header9.NavigationDrawer.Default.Link.Default.171902.click,click"><span>Calendar</span></a>
+                          </li>
+                          <li role="menuitem" data-ux="NavigationDrawerListItem"
+                            class="x-el x-el-li c1-1 c1-2 c1-58 c1-1r c1-4b c1-62 c1-63 c1-4h c1-b c1-c c1-5a c1-64 c1-d c1-e c1-f c1-g">
+                            <a rel="" role="link" aria-haspopup="false" data-ux="NavigationDrawerLink" target=""
+                              data-page="f3590cd9-82f4-4af6-ade1-963e08a2b4f6" data-edit-interactive="true"
+                              data-close="true" href="event-booking.html" data-typography="NavBeta"
+                              class="x-el x-el-a c1-1 c1-2 c1-w c1-1n c1-1o c1-13 c1-x c1-4w c1-4x c1-10 c1-11 c1-14 c1-65 c1-66 c1-b c1-2h c1-67 c1-1t c1-33 c1-4g c1-68 c1-69 c1-6a c1-6b c1-6c"
+                              data-tccl="ux2.HEADER.header9.NavigationDrawer.Default.Link.Default.171903.click,click"><span>Event
+                                Booking</span></a></li>
+                          <li role="menuitem" data-ux="NavigationDrawerListItem"
+                            class="x-el x-el-li c1-1 c1-2 c1-58 c1-1r c1-4b c1-62 c1-63 c1-4h c1-b c1-c c1-5a c1-64 c1-d c1-e c1-f c1-g">
+                            <a rel="" role="link" aria-haspopup="false" data-ux="NavigationDrawerLink" target=""
+                              data-page="78cb5b32-abbd-418a-8b4b-f815c99fe5e9" data-edit-interactive="true"
+                              data-close="true" href="contact-us.html" data-typography="NavBeta"
+                              class="x-el x-el-a c1-1 c1-2 c1-w c1-1n c1-1o c1-13 c1-x c1-4w c1-4x c1-10 c1-11 c1-14 c1-65 c1-66 c1-b c1-2h c1-67 c1-1t c1-33 c1-4g c1-68 c1-69 c1-6a c1-6b c1-6c"
+                              data-tccl="ux2.HEADER.header9.NavigationDrawer.Default.Link.Default.171904.click,click"><span>Contact
+                                Us</span></a></li>
+                          <li role="menuitem" data-ux="NavigationDrawerListItem"
+                            class="x-el x-el-li c1-1 c1-2 c1-58 c1-1r c1-4b c1-62 c1-63 c1-4h c1-b c1-c c1-5a c1-64 c1-d c1-e c1-f c1-g">
+                            <a rel="" role="link" aria-haspopup="false" data-ux="NavigationDrawerLink" target=""
+                              data-page="7f2835d1-74ae-44aa-9ee5-a804aabb6289" data-edit-interactive="true"
+                              data-close="true" href="membership-plans.html" data-typography="NavBeta"
+                              class="x-el x-el-a c1-1 c1-2 c1-w c1-1n c1-1o c1-13 c1-x c1-4w c1-4x c1-10 c1-11 c1-14 c1-65 c1-66 c1-b c1-2h c1-67 c1-1t c1-33 c1-4g c1-68 c1-69 c1-6a c1-6b c1-6c"
+                              data-tccl="ux2.HEADER.header9.NavigationDrawer.Default.Link.Default.171905.click,click"><span>Membership
+                                Plans</span></a></li>
+                          <li role="menuitem" data-ux="NavigationDrawerListItem"
+                            class="x-el x-el-li c1-1 c1-2 c1-58 c1-1r c1-4b c1-62 c1-63 c1-4h c1-b c1-c c1-5a c1-64 c1-d c1-e c1-f c1-g">
+                            <a rel="" role="link" aria-haspopup="false" data-ux="NavigationDrawerLinkActive" target=""
+                              data-page="b556edef-8c4b-4a98-8163-2856db2870bd" data-edit-interactive="true"
+                              data-close="true" href="game-library.html" data-typography="NavBeta"
+                              class="x-el x-el-a c1-1 c1-2 c1-w c1-1n c1-1o c1-13 c1-x c1-4w c1-4x c1-10 c1-11 c1-14 c1-65 c1-66 c1-b c1-2h c1-67 c1-4o c1-33 c1-4g c1-68 c1-69 c1-6a c1-6b c1-6c"
+                              data-tccl="ux2.HEADER.header9.NavigationDrawer.Default.Link.Active.171906.click,click"><span>Game
+                                Library</span></a></li>
+                        </ul>
+                        <div data-ux="Block" class="x-el x-el-div c1-1 c1-2 c1-b c1-c c1-4b c1-d c1-26 c1-e c1-f c1-g">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+        <div id="abef347c-1012-45f3-bae3-ba1b2db10eb5" class="widget widget-pdf widget-pdf-pdf-1">
+          <div data-ux="Widget" role="region" id="abef347c-1012-45f3-bae3-ba1b2db10eb5"
+            class="x-el x-el-div x-el c1-1 c1-2 c1-p c1-b c1-c c1-d c1-e c1-f c1-g c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g">
+            <div>
+              <section data-ux="Section"
+                class="x-el x-el-section c1-1 c1-2 c1-p c1-i c1-j c1-b c1-c c1-l c1-m c1-d c1-e c1-f c1-g">
+                <div data-ux="Container"
+                  class="x-el x-el-div c1-1 c1-2 c1-y c1-z c1-10 c1-11 c1-12 c1-b c1-c c1-16 c1-d c1-17 c1-e c1-18 c1-f c1-19 c1-g">
+                  <h1 role="heading" aria-level="1" data-ux="SectionHeading" data-aid="PDF_SECTION_TITLE_RENDERED"
+                    data-promoted-from="2" data-order="0" data-typography="HeadingBeta"
+                    class="x-el x-el-h1 c1-1 c1-2 c1-1n c1-1o c1-6d c1-24 c1-23 c1-1q c1-6e c1-1s c1-2v c1-6f c1-6g c1-1t c1-6h c1-6i c1-6j c1-6k c1-6l">
+                    <span data-ux="Element" class="">Game Library</span></h1>
+                  <div data-ux="GridCell"
+                    class="x-el x-el-div c1-1 c1-2 c1-3x c1-40 c1-41 c1-42 c1-12 c1-34 c1-28 c1-35 c1-29 c1-b c1-c c1-6q c1-6r c1-6s c1-d c1-6t c1-6u c1-6v c1-e c1-f c1-g">
+                    <div data-ux="Block"
+                      class="x-el x-el-div c1-1 c1-2 c1-6w c1-1s c1-6x c1-b c1-c c1-6y c1-d c1-e c1-f c1-g">
+                      <div data-ux="Text" data-aid="PDF_DESCRIPTION_RENDERED" data-typography="BodyAlpha"
+                        class="x-el c1-1 c1-2 c1-1n c1-1o c1-1p c1-1q c1-1r c1-1s c1-b c1-6z c1-c c1-1t c1-d c1-e c1-f c1-g x-rt">
+                        <p style="margin:0"><span><em
+                              class="x-el x-el-span c1-2a c1-2b c1-b c1-70 c1-2l c1-2i c1-71 c1-72">Games are subject to
+                              rotation.</em></span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-ux="Block" class="x-el x-el-div c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g">
+                    <div data-ux="Element" id="bs-3" class="x-el x-el-div c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g">
+                      <div data-ux="GridCell"
+                        class="x-el x-el-div c1-1 c1-2 c1-3x c1-40 c1-41 c1-42 c1-12 c1-34 c1-28 c1-35 c1-29 c1-b c1-c c1-6q c1-6r c1-6s c1-d c1-6t c1-6u c1-6v c1-e c1-f c1-g">
+                        <div data-ux="Block"
+                          class="x-el x-el-div c1-1 c1-2 c1-13 c1-75 c1-76 c1-77 c1-q c1-78 c1-r c1-79 c1-b c1-c c1-d c1-e c1-f c1-g">
+                          <div style="width:100%;position:relative;outline:none" tabindex="0"><canvas
+                              data-aid="PDF_PREVIEW_RENDERED"></canvas><a rel="noopener" role="link"
+                              aria-haspopup="true" data-ux="Link" data-aid="PDF_LINK_OVERLAY" target="_blank"
+                              href="https://img1.wsimg.com/blobby/go/ac25bc45-c8ca-4ca8-8af7-f260fd99529e/List%20of%20Available%20Games%20(1)-a71a739.pdf"
+                              data-typography="LinkAlpha"
+                              class="x-el x-el-a c1-2a c1-2b c1-w c1-1n c1-1o c1-4b c1-x c1-5f c1-50 c1-5e c1-4 c1-b c1-6g c1-c c1-2i c1-7a c1-7b c1-7c c1-d c1-e c1-f c1-g"
+                              data-tccl="ux2.PDF.pdf1.Section.Default.Link.Default.171907.click,click"></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+        <div id="52b791f5-4eb7-438b-8bea-4e4f9d396dad" class="widget widget-footer widget-footer-footer-3">
+          <div data-ux="Widget" role="contentinfo" id="52b791f5-4eb7-438b-8bea-4e4f9d396dad"
+            class="x-el x-el-div x-el c1-1 c1-2 c1-h c1-b c1-c c1-d c1-e c1-f c1-g c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g">
+            <div>
+              <section data-ux="Section"
+                class="x-el x-el-section c1-1 c1-2 c1-h c1-7d c1-7e c1-b c1-c c1-l c1-m c1-d c1-e c1-f c1-g">
+                <div data-ux="Container"
+                  class="x-el x-el-div c1-1 c1-2 c1-y c1-z c1-10 c1-11 c1-12 c1-b c1-c c1-16 c1-d c1-17 c1-e c1-18 c1-f c1-19 c1-g">
+                  <div data-ux="Layout" class="x-el x-el-div c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g">
+                    <div data-ux="Grid"
+                      class="x-el x-el-div c1-1 c1-2 c1-13 c1-3x c1-3y c1-7f c1-1q c1-23 c1-1r c1-24 c1-14 c1-1s c1-b c1-c c1-d c1-e c1-f c1-g">
+                      <div data-ux="GridCell"
+                        class="x-el x-el-div c1-1 c1-2 c1-3x c1-7g c1-41 c1-7h c1-12 c1-34 c1-28 c1-35 c1-29 c1-b c1-c c1-d c1-7i c1-7j c1-e c1-f c1-g">
+                        <div data-ux="FooterDetails" data-aid="FOOTER_COPYRIGHT_RENDERED" data-typography="DetailsAlpha"
+                          class="x-el c1-1 c1-2 c1-1n c1-1o c1-1p c1-1q c1-1r c1-b c1-7k c1-7l c1-1t c1-7m c1-7n c1-7o c1-7p c1-7q x-rt">
+                          <p style="margin:0"><span>Copyright © 2023 Pixel Paradise - All Rights Reserved.</span></p>
+                        </div>
+                      </div>
+                      <div data-ux="GridCell"
+                        class="x-el x-el-div c1-1 c1-2 c1-3x c1-7g c1-41 c1-7h c1-12 c1-34 c1-28 c1-35 c1-29 c1-b c1-c c1-d c1-7i c1-7j c1-e c1-f c1-g">
+                        <p data-ux="FooterDetails" data-aid="FOOTER_POWERED_BY_RENDERED" data-typography="DetailsAlpha"
+                          class="x-el x-el-p c1-1 c1-2 c1-1n c1-1o c1-1p c1-7r c1-1r c1-b c1-7k c1-7l c1-1t c1-7m c1-7s c1-7t c1-7o c1-7p c1-7q">
+                          <span>Powered by <a rel="nofollow noopener" role="link" aria-haspopup="true" data-ux="Link"
+                              target="_blank" data-aid="FOOTER_POWERED_BY_RENDERED_LINK"
+                              href="https://www.godaddy.com/websites/website-builder?isc=pwugc&amp;utm_source=wsb&amp;utm_medium=applications&amp;utm_campaign=en-us_corp_applications_base"
+                              data-typography="LinkAlpha"
+                              class="x-el x-el-a c1-2a c1-2b c1-w c1-1n c1-1o c1-30 c1-x c1-7r c1-b c1-32 c1-7l c1-2i c1-33 c1-2k c1-7m c1-7s c1-7t c1-7o c1-7p c1-7q"
+                              data-tccl="ux2.FOOTER.footer3.Layout.Default.Link.Default.171908.click,click">GoDaddy</a></span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+        <div id="49449c5a-fd04-45de-9f3b-2e5339f5dfa4" class="widget widget-popup widget-popup-popup-1">
+          <div data-ux="ModalPopup" id="popup-widget171909" data-edit-interactive="true" data-aid="POPUP_MODAL"
+            class="x-el x-el-div x-el c1-1 c1-2 c1-5d c1-3w c1-15 c1-5e c1-7u c1-7v c1-7w c1-2d c1-2e c1-2f c1-2g c1-7x c1-54 c1-7y c1-b c1-c c1-d c1-e c1-f c1-g c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g">
+            <div data-ux="ModalBody" role="dialog"
+              class="x-el x-el-div x-el c1-1 c1-2 c1-b c1-c c1-7z c1-16 c1-80 c1-81 c1-82 c1-83 c1-84 c1-85 c1-86 c1-87 c1-88 c1-89 c1-8a c1-8b c1-8c c1-7z c1-16 c1-80 c1-81 c1-82 c1-83 c1-84 c1-85 c1-86 c1-87 c1-88 c1-89 c1-d c1-8a c1-8b c1-8c c1-e c1-f c1-g c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g">
+              <div data-ux="Block"
+                class="x-el x-el-div c1-1 c1-2 c1-5d c1-13 c1-5n c1-3 c1-8d c1-35 c1-8e c1-8f c1-8g c1-8h c1-34 c1-28 c1-29 c1-25 c1-b c1-c c1-8i c1-4q c1-8j c1-8k c1-8l c1-8m c1-8n c1-8o c1-8p c1-8q c1-8r c1-8s c1-8t c1-8u c1-16 c1-8v c1-8w c1-8x c1-16 c1-8v c1-8w c1-8x c1-d c1-8y c1-e c1-f c1-g">
+                <div data-ux="Block"
+                  class="x-el x-el-div c1-1 c1-2 c1-13 c1-3v c1-4y c1-4z c1-4w c1-1w c1-50 c1-7w c1-t c1-b c1-c c1-d c1-e c1-f c1-g">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28" data-ux="Icon"
+                    id="popup-widget171909-close-icon"
+                    class="x-el x-el-svg c1-1 c1-2 c1-8z c1-2m c1-37 c1-q c1-78 c1-r c1-79 c1-x c1-90 c1-3 c1-91 c1-92 c1-b c1-c c1-d c1-e c1-f c1-g">
+                    <path fill-rule="evenodd"
+                      d="M17.999 4l-6.293 6.293L5.413 4 4 5.414l6.292 6.293L4 18l1.413 1.414 6.293-6.292 6.293 6.292L19.414 18l-6.294-6.293 6.294-6.293z">
+                    </path>
+                  </svg></div>
+                <div data-ux="Block"
+                  class="x-el x-el-div c1-1 c1-2 c1-93 c1-12 c1-94 c1-29 c1-28 c1-54 c1-4 c1-95 c1-8g c1-b c1-c c1-96 c1-97 c1-8w c1-d c1-e c1-f c1-g">
+                  <div data-ux="Block" class="x-el x-el-div c1-1 c1-2 c1-13 c1-1r c1-b c1-c c1-d c1-98 c1-e c1-f c1-g">
+                    <picture data-lazyimg="true"
+                      class="x-el x-el-picture c1-1 c1-2 c1-4 c1-5f c1-1s c1-99 c1-25 c1-b c1-c c1-d c1-e c1-f c1-g">
+                      <source media="(max-width: 450px)"
+                        srcSet="//img1.wsimg.com/isteam/ip/ac25bc45-c8ca-4ca8-8af7-f260fd99529e/blob-92485d2.png/:/cr=t:15.91%25,l:0%25,w:100%25,h:68.18%25/rs=w:403,h:183,cg:true, //img1.wsimg.com/isteam/ip/ac25bc45-c8ca-4ca8-8af7-f260fd99529e/blob-92485d2.png/:/cr=t:15.91%25,l:0%25,w:100%25,h:68.18%25/rs=w:806,h:366,cg:true 2x, //img1.wsimg.com/isteam/ip/ac25bc45-c8ca-4ca8-8af7-f260fd99529e/blob-92485d2.png/:/cr=t:15.91%25,l:0%25,w:100%25,h:68.18%25/rs=w:1209,h:549,cg:true 3x" />
+                      <source media="(min-width: 451px)"
+                        srcSet="//img1.wsimg.com/isteam/ip/ac25bc45-c8ca-4ca8-8af7-f260fd99529e/blob-92485d2.png/:/cr=t:15.91%25,l:0%25,w:100%25,h:68.18%25/rs=w:515,h:234,cg:true, //img1.wsimg.com/isteam/ip/ac25bc45-c8ca-4ca8-8af7-f260fd99529e/blob-92485d2.png/:/cr=t:15.91%25,l:0%25,w:100%25,h:68.18%25/rs=w:1030,h:468,cg:true 2x, //img1.wsimg.com/isteam/ip/ac25bc45-c8ca-4ca8-8af7-f260fd99529e/blob-92485d2.png/:/cr=t:15.91%25,l:0%25,w:100%25,h:68.18%25/rs=w:1254,h:570,cg:true 3x" />
+                      <img data-ux="Image"
+                        src="https://img1.wsimg.com/isteam/ip/ac25bc45-c8ca-4ca8-8af7-f260fd99529e/blob-92485d2.png/:/cr=t:15.91%25,l:0%25,w:100%25,h:68.18%25/rs=w:515,h:234,cg:true"
+                        class="x-el x-el-img c1-1 c1-2 c1-4 c1-12 c1-y c1-z c1-1q c1-1r c1-37 c1-9a c1-3d c1-b c1-c c1-d c1-e c1-f c1-g" />
+                    </picture>
+                  </div>
+                  <div data-ux="Block"
+                    class="x-el x-el-div c1-1 c1-2 c1-1s c1-9b c1-7d c1-9c c1-7e c1-46 c1-b c1-c c1-d c1-e c1-f c1-g">
+                    <h3 role="heading" aria-level="3" data-ux="HeadingMiddle" data-aid="POPUP_TITLE_RENDERED"
+                      data-typography="HeadingGamma"
+                      class="x-el x-el-h3 c1-1 c1-2 c1-1n c1-1o c1-9d c1-24 c1-23 c1-1q c1-1r c1-b c1-9e c1-5s c1-1t c1-5t c1-5u c1-5v c1-5w">
+                      Check Our Calendar!</h3>
+                    <div data-ux="Text" data-aid="POPUP_DESCRIPTION_RENDERED" data-typography="BodyAlpha"
+                      class="x-el c1-1 c1-2 c1-1n c1-1o c1-1p c1-1q c1-1r c1-b c1-9f c1-c c1-1t c1-d c1-e c1-f c1-g x-rt">
+                      <p style="margin:0"><span>Sometimes we are closed to the public for private events (such as
+                          birthday parties, tournaments, etc.) Click the button below to check if we're currently
+                          open.</span></p>
+                      <p style="margin:0"><span>&nbsp;If it says "Busy," please come another time!</span></p>
+                      <p style="margin:0"><span><br></span></p>
+                      <p style="margin:0"><span>If you'd like to book an event with us, <a
+                            class="x-el x-el-a c1-2a c1-2b c1-74 c1-1n c1-1o c1-30 c1-x c1-6m c1-b c1-9e c1-2i c1-9g c1-9h"
+                            class="x-el x-el-a c1-2a c1-2b c1-74 c1-1n c1-1o c1-30 c1-x c1-6m c1-b c1-9e c1-2i c1-9g c1-9h"
+                            href="https://pixelparadise.com/party-booking-1#62ec57fb-df24-4821-8219-4728ca48d474" rel=""
+                            data-page="f3590cd9-82f4-4af6-ade1-963e08a2b4f6"
+                            data-section-jump="62ec57fb-df24-4821-8219-4728ca48d474">click here</a>!</span></p>
+                    </div><a data-ux-btn="primary" data-ux="ButtonPrimary" data-aid="CTA_RENDERED"
+                      href="calendar.html#19e4ee42-6c01-4f5d-a6c2-2e6e77e93ed6" target=""
+                      data-tccl="ux2.POPUP.popup1.Button.Primary.171912.click,click"
+                      data-page="ddedc5a7-0cda-42ff-9716-723d2ddb0144"
+                      data-section-jump="19e4ee42-6c01-4f5d-a6c2-2e6e77e93ed6" id="popup-widget171909-cta"
+                      data-typography="ButtonAlpha"
+                      class="x-el x-el-a c1-9i c1-4a c1-x c1-9j c1-9k c1-14 c1-15 c1-1s c1-w c1-1o c1-1n c1-n c1-12 c1-4 c1-46 c1-9c c1-1v c1-1w c1-9l c1-3d c1-9m c1-p c1-b c1-4o c1-9n c1-7l c1-9o c1-9p c1-7m c1-7o c1-7p c1-7q">Click
+                      here to view calendar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="87f3c4cc-c737-4f11-8d46-14ad5f165a34" class="widget widget-messaging widget-messaging-messaging-1">
+          <div data-ux="Element" id="bs-4" class="x-el x-el-div c1-1 c1-2 c1-b c1-c c1-d c1-e c1-f c1-g">
+            <div data-ux="Block"
+              class="x-el x-el-div c1-1 c1-2 c1-5d c1-9q c1-9r c1-9s c1-9t c1-9u c1-b c1-c c1-d c1-9v c1-e c1-f c1-g">
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="ad1769bf-71d8-4a50-8296-42841acf6ae2"
+          class="widget widget-cookie-banner widget-cookie-banner-cookie-1">
+          <div data-ux="Group" data-aid="FOOTER_COOKIE_BANNER_RENDERED" id="ad1769bf-71d8-4a50-8296-42841acf6ae2-banner"
+            class="x-el x-el-div c1-1 c1-2 c1-5d c1-7w c1-9w c1-4 c1-94 c1-59 c1-p c1-3d c1-54 c1-9x c1-9y c1-9z c1-a0 c1-a1 c1-11 c1-a2 c1-10 c1-1q c1-23 c1-1r c1-24 c1-25 c1-b c1-c c1-a3 c1-a4 c1-a5 c1-82 c1-a6 c1-83 c1-a7 c1-d c1-e c1-f c1-g">
+            <h4 role="heading" aria-level="4" data-ux="Heading" data-aid="FOOTER_COOKIE_TITLE_RENDERED"
+              data-typography="HeadingDelta"
+              class="x-el x-el-h4 c1-1 c1-2 c1-1n c1-1o c1-9d c1-24 c1-23 c1-1q c1-1r c1-1w c1-b c1-1c c1-67 c1-1t c1-68 c1-6a c1-6b c1-6c">
+              This website uses cookies.</h4>
+            <div data-ux="Text" data-aid="FOOTER_COOKIE_MESSAGE_RENDERED" data-typography="BodyAlpha"
+              class="x-el c1-1 c1-2 c1-1n c1-1o c1-1p c1-1q c1-1r c1-a8 c1-54 c1-b c1-6z c1-c c1-1t c1-a9 c1-d c1-e c1-f c1-g x-rt">
+              <p style="margin:0"><span>We use cookies to analyze website traffic and optimize your website experience.
+                  By accepting our use of cookies, your data will be aggregated with all other user data.</span></p>
+            </div>
+            <div data-ux="Block" class="x-el x-el-div c1-1 c1-2 c1-13 c1-66 c1-b c1-c c1-d c1-e c1-f c1-g"><a
+                data-ux-btn="primary" data-ux="ButtonPrimary" href="game-library.html"
+                data-aid="FOOTER_COOKIE_CLOSE_RENDERED" id="ad1769bf-71d8-4a50-8296-42841acf6ae2-accept"
+                data-typography="ButtonAlpha"
+                class="x-el x-el-a c1-9i c1-4a c1-13 c1-5n c1-15 c1-x c1-7r c1-aa c1-ab c1-ac c1-40 c1-9j c1-14 c1-1s c1-w c1-1o c1-1n c1-n c1-12 c1-4 c1-4y c1-4z c1-q c1-r c1-ad c1-3d c1-ae c1-3 c1-b c1-4o c1-9n c1-af c1-ag c1-ah c1-9p c1-ai c1-aj c1-ak c1-al"
+                data-tccl="ux2.COOKIE_BANNER.cookie1.Group.Default.Button.Primary.171913.click,click">Accept</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script
+    type="text/javascript">"IntersectionObserver" in window && "Intl" in window && "Locale" in window.Intl || document.write(`\x3Cscript src="https://img1.wsimg.com/poly/v3/polyfill.min.js?rum=0&unknown=polyfill&flags=gated&features=Intl.~locale.en-US">\x3C/script>`)</script>
+  <script src="https://img1.wsimg.com/blobby/go/ac25bc45-c8ca-4ca8-8af7-f260fd99529e/gpub/c5633f61a0e63489/script.js"
+    crossorigin></script>
+  <script src="https://img1.wsimg.com/ceph-p3-01/website-builder-data-prod/static/widgets/UX.4.30.4.js"
+    crossorigin></script>
+  <script src="https://img1.wsimg.com/blobby/go/ac25bc45-c8ca-4ca8-8af7-f260fd99529e/gpub/eb4f073e89575df5/script.js"
+    crossorigin></script>
+  <script defer src="https://img1.wsimg.com/traffic-assets/js/tccl.min.js" crossorigin></script>
+</body>
+
+</html>
