@@ -25,7 +25,6 @@ Increased Asset Downloads/Purchases: The introduction of dynamic asset previews,
 Positive User Feedback: Gathering feedback from end users through surveys, reviews, or feedback forms will help gauge user satisfaction and identify areas for further improvement. Positive feedback and higher satisfaction scores indicate that the enhancements have resonated with the target audience.
 
 Reduced Load Time: Implementing frontend optimizations, like minifying files and optimizing images, can lead to reduced website load time. This is essential for retaining users and improving search engine rankings.
-![image](https://github.com/vskumar9/IBM-Skills-Build-Internship_Cloning_website/assets/72122950/0cb14197-05bb-4a21-a47c-b3c14754962e)
 
 
 Live URL of the Customized Pixel Paradise Website:  https://clone-pixel-paradise-website.netlify.app/
